@@ -1,43 +1,20 @@
 <template>
   <div>
-    <nav>
-      <router-link class="logo" to="/">
-        OCEANBLUE BOATS
-      </router-link>
-
-      <a href="#" class="hamburger">
-        &#9776;
-      </a>
-    </nav>
+    <navbar></navbar>
 
     <nuxt/>
   </div>
 </template>
 
+<script>
+import navbar from '~/components/navbar.vue'
+
+export default {
+  components: {
+    navbar
+  }
+}
+</script>
+
 <style>
-nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin: 1.8rem;
-  padding: 0.2rem 0;
-  background-color: transparent;
-  color: #fff;
-  border-bottom: 1px solid currentColor;
-}
-
-.logo {
-  font-family: var(--font-header);
-}
-
-nav .hamburger {
-  font-size: 1.6rem;
-  line-height: 1;
-  font-weight: bold;
-}
 </style>
