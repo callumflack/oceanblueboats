@@ -44,15 +44,19 @@
         link="/about"
       ></hero>
     </div>
+
+    <formContact></formContact>
   </div>
 </template>
 
 <script>
 import hero from '~/components/hero.vue'
+import formContact from '~/components/form-contact.vue'
 
 export default {
   components: {
-    hero
+    hero,
+    formContact
   }
 }
 </script>

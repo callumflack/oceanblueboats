@@ -44,7 +44,6 @@
   align-items: center;
   width: 100%;
   height: 100vh;
-  text-transform: uppercase;
 }
 
 .columns {
@@ -55,9 +54,5 @@
 
 .columns.reverse {
   flex-direction: column-reverse;
-}
-
-.subtext {
-	line-height: 1.75;
 }
 </style>
