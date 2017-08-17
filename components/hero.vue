@@ -3,10 +3,9 @@
     <router-link :to="link">
       <div class="container--md">
         <div class="hero-body">
-            <div :class="['columns', { reverse }]">
-                <h1 class="display has-text-white">{{headline}}</h1>
-                <h4>{{subtext}}</h4>
-            </div>
+          <div :class="['columns', { reverse }]">
+            <h1 class="display">{{headline}}</h1>
+            <h4 class="subtext">{{subtext}}</h4>
           </div>
         </div>
       </div>
@@ -35,6 +34,10 @@
   background-position: center;
 }
 
+.hero:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
 .hero-body {
   display: flex;
   justify-content: stretch;
@@ -47,13 +50,14 @@
 .columns {
   display: flex;
   flex-direction: column;
+  max-width: 550px;
 }
 
 .columns.reverse {
   flex-direction: column-reverse;
 }
 
-.hero:not(:last-child) {
-  margin-bottom: 0.5rem;
+.subtext {
+	line-height: 1.75;
 }
 </style>

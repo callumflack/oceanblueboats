@@ -29,11 +29,15 @@ nav {
   background-color: transparent;
   color: #fff;
   border-bottom: 1px solid currentColor;
-  font-weight: bold;
+}
+
+.logo {
+  font-family: var(--font-header);
 }
 
 nav .hamburger {
   font-size: 1.6rem;
   line-height: 1;
+  font-weight: bold;
 }
 </style>

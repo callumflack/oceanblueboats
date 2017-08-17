@@ -1,10 +1,27 @@
+
+/*
+ * Fonts
+ * --------------------
+ */
+
+@font-face {
+  font-family: "MFred";
+  src: url("/fonts/MFred.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Equity";
+  src: url("/fonts/equity-regular-webfont.woff") format("woff");
+}
+
+
 :root {
 	--color-brand: #fece46;
 	--color-brand-shade: #149dff;
 	--color-grey: #eaeaea;
 
-	--font: "Verdana";
-	--font-header: "Verdana";
+	--font: "Equity";
+	--font-header: "MFred";
 	--font-color: #333;
 	--line-height: 1.45;
 
@@ -14,7 +31,7 @@
 	--text-size-sm: 0.889rem;
 	--text-size-xsm: 0.79rem;
 
-	--header-size-lg: 3.998rem;
+	--header-size-lg: 5.998rem;
 	--header-size-rg: 2.827rem;
 	--header-size-sm: 1.999rem;
 	--header-size-xsm: 1.414rem;
@@ -37,6 +54,7 @@ body {
 	font-family: var(--font);
 	font-size: var(--text-size-rg);
 	line-height: var(--line-height);
+  letter-spacing: 0.18rem;
 }
 
 
@@ -50,13 +68,14 @@ h2,
 h3,
 h4,
 h5 {
-  line-height: 1.2;
+  font-weight: normal;
 }
 
 .display {
   font-family: var(--font-header);
 	font-size: var(--header-size-lg);
-  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0.25rem;
 }
 
 p {
