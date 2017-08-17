@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import navbar from '~/components/navbar.vue'
-import appFooter from '~/components/footer.vue'
+import navbar from '~/layouts/mixins/navbar.vue'
+import appFooter from '~/layouts/mixins/footer.vue'
 
 export default {
   components: {
