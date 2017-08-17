@@ -1,37 +1,47 @@
 <template>
-  <section class="hero" :style="`background-image: url(${backgroundImage})`">
-    <router-link :to="link">
+  <section :class="['hero', { 'text-white': backgroundImage }]" :style="`background-image: url(${backgroundImage})`">
+    <heroLink :link="link">
       <div class="container--md">
-        <div class="hero-body">
+        <div :class="['hero-body', { 'hero-body--half': half }]">
           <div :class="['columns', { reverse }]">
             <h1 class="display">{{headline}}</h1>
             <h4 class="subtext">{{subtext}}</h4>
           </div>
         </div>
       </div>
-    </router-link>
+    </heroLink>
   </section>
 </template>
 
 <script>
-  export default {
-    name: 'hero',
+import heroLink from '~/components/hero-link.vue'
 
-    props: {
-      headline: String,
-      subtext: String,
-      backgroundImage: String,
-      link: String,
-      reverse: Boolean
-    }
+export default {
+  name: 'hero',
+
+  components: {
+    heroLink
+  },
+
+  props: {
+    headline: String,
+    subtext: String,
+    backgroundImage: String,
+    link: String,
+    reverse: Boolean,
+    half: Boolean
   }
+}
 </script>
 
 <style>
 .hero {
-  color: #fff;
   background-size: cover;
   background-position: center;
+}
+
+.hero.text-white {
+  color: #fff;
 }
 
 .hero:not(:last-child) {
@@ -46,10 +56,15 @@
   height: 100vh;
 }
 
+.hero-body--half {
+  height: auto;
+  min-height: 50vh;
+}
+
 .columns {
   display: flex;
   flex-direction: column;
-  max-width: 550px;
+  max-width: 600px;
 }
 
 .columns.reverse {

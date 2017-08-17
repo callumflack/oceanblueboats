@@ -1,0 +1,19 @@
+<template>
+  <div>
+    <router-link v-if="link" :to="link">
+      <slot />
+    </router-link>
+
+    <div v-else>
+      <slot />
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  props: {
+    link: String
+  }
+}
+</script>
