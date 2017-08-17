@@ -63,8 +63,7 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
 .Grid {
   margin-top: 0.4rem;
 }

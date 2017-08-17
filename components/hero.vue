@@ -34,7 +34,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .hero {
   background-size: cover;
   background-position: center;
