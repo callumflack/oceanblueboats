@@ -126,7 +126,7 @@ a {
   color: var(--color-brand);
 }
 
-.fill {
+.button-fill {
   background-color: var(--color-brand);
   color: #fff;
   padding: 0.85rem 1.5rem;

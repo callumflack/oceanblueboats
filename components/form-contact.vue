@@ -10,7 +10,7 @@
         <textarea rows='4' placeholder="How can we help make your dream boat?" name="message"></textarea>
 
         <div class="u-textRight">
-          <button class="fill" type="submit">Submit <span class="icon">&rarr;</span></button>
+          <button class="button-fill" type="submit">Submit <span class="icon">&rarr;</span></button>
         </div>
       </div>
     </form>
