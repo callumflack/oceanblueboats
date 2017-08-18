@@ -4,18 +4,18 @@
 
     <nuxt/>
 
-    <appFooter></appFooter>
+    <app-footer></app-footer>
   </div>
 </template>
 
 <script>
-import navbar from '~/layouts/mixins/navbar.vue'
-import appFooter from '~/layouts/mixins/footer.vue'
+import Navbar from '~/layouts/mixins/navbar.vue'
+import AppFooter from '~/layouts/mixins/footer.vue'
 
 export default {
   components: {
-    navbar,
-    appFooter
+    Navbar,
+    AppFooter
   }
 }
 </script>

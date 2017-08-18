@@ -1,6 +1,6 @@
 <template>
   <section :class="['hero', { 'text-white': backgroundImage }]" :style="`background-image: url(${backgroundImage})`">
-    <heroLink :link="link">
+    <hero-link :link="link">
       <div class="container--md">
         <div :class="['hero-body', { 'hero-body--half': half }]">
           <div :class="['columns', { reverse }]">
@@ -9,18 +9,18 @@
           </div>
         </div>
       </div>
-    </heroLink>
+    </hero-link>
   </section>
 </template>
 
 <script>
-import heroLink from '~/components/hero-link.vue'
+import HeroLink from '~/components/hero-link.vue'
 
 export default {
   name: 'hero',
 
   components: {
-    heroLink
+    HeroLink
   },
 
   props: {

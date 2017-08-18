@@ -1,19 +1,19 @@
 <template>
   <div class="container--md small font-header">
     <ul>
-      <navInPageLink
+      <nav-in-page-link
         v-for="link in navLinks"
         :key="link.label"
         :label="link.label"
         :link="link.link"
         :currentPage="currentPage"
-      ></navInPageLink>
+      ></nav-in-page-link>
     </ul>
   </div>
 </template>
 
 <script>
-import navInPageLink from '~/components/nav-in-page-link.vue'
+import NavInPageLink from '~/components/nav-in-page-link.vue'
 
 export default {
   name: 'nav-in-page',
@@ -42,7 +42,7 @@ export default {
   },
 
   components: {
-    navInPageLink
+    NavInPageLink
   },
 
   props: {

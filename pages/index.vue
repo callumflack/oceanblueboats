@@ -45,18 +45,18 @@
       ></hero>
     </div>
 
-    <formContact></formContact>
+    <form-contact></form-contact>
   </div>
 </template>
 
 <script>
-import hero from '~/components/hero.vue'
-import formContact from '~/components/form-contact.vue'
+import Hero from '~/components/hero.vue'
+import FormContact from '~/components/form-contact.vue'
 
 export default {
   components: {
-    hero,
-    formContact
+    Hero,
+    FormContact
   }
 }
 </script>

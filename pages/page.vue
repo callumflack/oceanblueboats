@@ -31,18 +31,18 @@
       </p>
     </div>
 
-    <navInPage currentPage="The process"></navInPage>
+    <nav-in-page currentPage="The process"></nav-in-page>
   </div>
 </template>
 
 <script>
-import hero from '~/components/hero.vue'
-import navInPage from '~/components/nav-in-page.vue'
+import Hero from '~/components/hero.vue'
+import NavInPage from '~/components/nav-in-page.vue'
 
 export default {
   components: {
-    hero,
-    navInPage
+    Hero,
+    NavInPage
   }
 }
 </script>
