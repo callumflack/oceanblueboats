@@ -4,7 +4,9 @@
 
     <nuxt/>
 
-    <app-footer></app-footer>
+    <div class="block container--md">
+      <app-footer></app-footer>
+    </div>
   </div>
 </template>
 

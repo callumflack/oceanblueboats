@@ -1,15 +1,13 @@
 <template>
-  <div class="container--md small font-header">
-    <ul>
-      <nav-in-page-link
-        v-for="link in navLinks"
-        :key="link.label"
-        :label="link.label"
-        :link="link.link"
-        :currentPage="currentPage"
-      ></nav-in-page-link>
-    </ul>
-  </div>
+  <ul class="small font-header">
+    <nav-in-page-link
+      v-for="link in navLinks"
+      :key="link.label"
+      :label="link.label"
+      :link="link.link"
+      :currentPage="currentPage"
+    ></nav-in-page-link>
+  </ul>
 </template>
 
 <script>

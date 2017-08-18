@@ -45,7 +45,9 @@
       ></hero>
     </div>
 
-    <form-contact></form-contact>
+    <div class="block container--md">
+      <form-contact></form-contact>
+    </div>
   </div>
 </template>
 

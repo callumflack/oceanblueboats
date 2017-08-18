@@ -31,7 +31,9 @@
       </p>
     </div>
 
-    <nav-in-page></nav-in-page>
+    <div class="container--md">
+      <nav-in-page></nav-in-page>
+    </div>
   </div>
 </template>
 

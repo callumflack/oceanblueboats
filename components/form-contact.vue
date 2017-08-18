@@ -1,5 +1,5 @@
 <template>
-  <div class="block container--md">
+  <div>
     <div class="display">Let's Talk</div>
     <div class="subtext">Got questions, ideas? Drop in or write:</div>
 

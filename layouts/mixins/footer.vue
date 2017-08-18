@@ -1,5 +1,5 @@
 <template>
-  <footer class="block container--md small">
+  <footer class="small">
     <hr>
 
     <h3 class="font-header">Contact Us</h3>
