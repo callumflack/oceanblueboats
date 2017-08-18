@@ -1,5 +1,13 @@
 <template>
-  <section :class="['hero', { 'text-white': backgroundImage }]" :style="`background-image: url(${backgroundImage})`">
+  <section
+    :class="[
+      'hero',
+      {
+        'text-white': backgroundImage
+      }
+    ]"
+    :style="backgroundImage ? `background-image: url(${backgroundImage})` : ''"
+  >
     <hero-link :link="link">
       <div class="container--md">
         <div :class="['hero-body', { 'hero-body--half': half }]">
