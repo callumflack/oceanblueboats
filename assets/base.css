@@ -27,7 +27,7 @@
   --text-size-xlg: 1.366rem;
   --text-size-lg: 1.125rem;
   --text-size-rg: 22px;
-  --text-size-sm: 0.95rem;
+  --text-size-sm: 0.93rem;
   --text-size-xsm: 0.79rem;
 
   --header-size-lg: 4.498rem;
@@ -37,7 +37,7 @@
 
   --block-sm: 3rem;
   --block-md: 3rem;
-  --block-rg: 5rem;
+  --block-rg: 3rem;
   --block-rg: 5rem;
 
   --container-width: 960px;
@@ -95,6 +95,7 @@ small,
 .font-header {
   font-family: var(--font-header);
   text-transform: uppercase;
+  letter-spacing: 0.1rem;
 }
 
 p {
@@ -146,9 +147,9 @@ a {
 }
 
 hr {
-  margin-left: 0;
+  margin: 0.8rem 0;
   border: 0;
-  border-bottom: 2px solid var(--color-grey);
+  border-bottom: 1px solid var(--color-brand);
 }
 
 img {

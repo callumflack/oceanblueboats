@@ -1,7 +1,7 @@
 <template>
   <li>
     <a :href='link'>
-      <span v-if='link === $store.state.currentPage'>&rarr;</span>
+      <span class="icon" v-if='link === $store.state.currentPage'>&rarr;</span>
       {{label}}
     </a>
   </li>

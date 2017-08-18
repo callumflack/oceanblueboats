@@ -1,13 +1,19 @@
 <template>
-  <ul class="small font-header">
-    <nav-in-page-link
-      v-for="link in navLinks"
-      :key="link.label"
-      :label="link.label"
-      :link="link.link"
-      :currentPage="currentPage"
-    ></nav-in-page-link>
-  </ul>
+  <div>
+    <div class="u-inlineBlock font-header">
+      <hr>
+
+      <ul>
+        <nav-in-page-link
+          v-for="link in navLinks"
+          :key="link.label"
+          :label="link.label"
+          :link="link.link"
+          :currentPage="currentPage"
+        ></nav-in-page-link>
+      </ul>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -49,14 +55,11 @@ export default {
 <style scoped>
 ul {
   display: inline-block;
-  border-top: 1px solid var(--color-brand);
-  padding-top: 1rem;
   padding-right: 1.5rem;
 }
 
 li {
   line-height: 1.5;
-  letter-spacing: 0.1rem;
 }
 
 li.active::before {
