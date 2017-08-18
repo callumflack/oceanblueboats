@@ -31,7 +31,7 @@
       </p>
     </div>
 
-    <nav-in-page currentPage="The process"></nav-in-page>
+    <nav-in-page></nav-in-page>
   </div>
 </template>
 

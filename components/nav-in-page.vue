@@ -26,16 +26,13 @@ export default {
           link: '/'
         }, {
           label: 'The history',
-          link: '/'
+          link: '/the-history'
         }, {
           label: 'The factory',
-          link: '/'
+          link: '/the-factory'
         }, {
           label: 'The process',
-          link: '/'
-        }, {
-          label: 'The home page',
-          link: '/'
+          link: '/the-process'
         }
       ]
     }
