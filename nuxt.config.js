@@ -39,4 +39,7 @@ module.exports = {
     '~/assets/suit.css',
     '~/assets/base.css'
   ],
+  router: {
+    middleware: 'currentPage'
+  }
 }

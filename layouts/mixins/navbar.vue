@@ -1,5 +1,11 @@
 <template>
-  <nav :class="{hidden: isNavHidden, fill: windowIsScrolled}">
+  <nav
+    :class="{
+      hidden: isNavHidden,
+      fill: windowIsScrolled,
+      white: $store.state.currentPage === '/'
+    }"
+  >
     <div class="nav-body">
       <router-link class="logo" to="/">
         OCEANBLUE BOATS
@@ -72,7 +78,12 @@ nav {
     border-bottom-color 0.2s;
 }
 
+nav.white {
+  color: #fff;
+}
+
 nav.fill {
+  color: var(--color-brand);
   background-color: #fff;
 }
 
