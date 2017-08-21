@@ -7,48 +7,48 @@
         reverse
         backgroundImage="/rod-long.jpg"
         link="/"
-      ></hero>
+      />
 
       <hero
         headline="The history"
         subtext="EST. Carins 2002. But it all started much earlier that that."
         backgroundImage="/rod-long.jpg"
         link="/the-history"
-      ></hero>
+      />
 
       <hero
         headline="The factory"
         subtext="Vince's hanger-sized dream shed. We do general repairs and refits too."
         backgroundImage="/rod-long.jpg"
         link="/the-factory"
-      ></hero>
+      />
 
       <hero
         headline="The process"
         subtext="Precision fabrication with water-jet cutting technology."
         backgroundImage="/rod-long.jpg"
         link="/the-process"
-      ></hero>
+      />
 
       <hero
         headline="The boat builders"
         subtext="Boat-lovers, from hair to toes"
         backgroundImage="/rod-long.jpg"
         link="/the-boat-builders"
-      ></hero>
+      />
 
       <hero
         headline="The designs"
         subtext="Start here. We'll customise to your dreams"
         backgroundImage="/rod-long.jpg"
         link="/the-designs"
-      ></hero>
+      />
     </div>
 
-    <div class="block"></div>
+    <div class="block" />
 
     <div class="container--md">
-      <form-contact></form-contact>
+      <form-contact />
     </div>
   </div>
 </template>

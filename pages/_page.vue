@@ -5,19 +5,19 @@
         :headline="page.title"
         :subtext="page.subtitle"
         half
-      ></hero>
+      />
 
       <hero
         backgroundImage="/rod-long.jpg"
         link="/about"
         half
-      ></hero>
+      />
     </div>
 
     <div class="block container--md" v-html="page.body" />
 
     <div class="container--md">
-      <nav-in-page></nav-in-page>
+      <nav-in-page />
     </div>
   </div>
 </template>

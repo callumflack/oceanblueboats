@@ -7,7 +7,7 @@
       <div class="form-group">
         <input placeholder="Your name*" name="name">
         <input placeholder="Your email*" name="email">
-        <textarea rows='4' placeholder="How can we help make your dream boat?" name="message"></textarea>
+        <textarea rows='4' placeholder="How can we help make your dream boat?" name="message" />
 
         <div class="u-textRight">
           <button class="button-fill" type="submit">Submit <span class="icon">&rarr;</span></button>

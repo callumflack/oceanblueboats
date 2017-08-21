@@ -1,11 +1,11 @@
 <template>
   <div>
-    <navbar></navbar>
+    <navbar />
 
     <nuxt/>
 
     <div class="block container--md">
-      <app-footer></app-footer>
+      <app-footer />
     </div>
   </div>
 </template>

@@ -10,7 +10,7 @@
           :label="link.label"
           :link="link.link"
           :currentPage="currentPage"
-        ></nav-in-page-link>
+        />
       </ul>
     </div>
   </div>
