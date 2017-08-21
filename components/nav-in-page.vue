@@ -37,6 +37,12 @@ export default {
         }, {
           label: 'The process',
           link: '/the-process'
+        }, {
+          label: 'The boat builders',
+          link: '/the-boat-builders'
+        }, {
+          label: 'The designs',
+          link: '/the-designs'
         }
       ]
     }

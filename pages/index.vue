@@ -13,35 +13,35 @@
         headline="The history"
         subtext="EST. Carins 2002. But it all started much earlier that that."
         backgroundImage="/rod-long.jpg"
-        link="/about"
+        link="/the-history"
       ></hero>
 
       <hero
         headline="The factory"
         subtext="Vince's hanger-sized dream shed. We do general repairs and refits too."
         backgroundImage="/rod-long.jpg"
-        link="/about"
+        link="/the-factory"
       ></hero>
 
       <hero
         headline="The process"
         subtext="Precision fabrication with water-jet cutting technology."
         backgroundImage="/rod-long.jpg"
-        link="/about"
+        link="/the-process"
       ></hero>
 
       <hero
         headline="The boat builders"
         subtext="Boat-lovers, from hair to toes"
         backgroundImage="/rod-long.jpg"
-        link="/about"
+        link="/the-boat-builders"
       ></hero>
 
       <hero
         headline="The designs"
         subtext="Start here. We'll customise to your dreams"
         backgroundImage="/rod-long.jpg"
-        link="/about"
+        link="/the-designs"
       ></hero>
     </div>
 

@@ -2,8 +2,8 @@
   <div>
     <div>
       <hero
-        headline="The process"
-        subtext="Precision fabircation with water-jet cutting techonology means we're more than capable."
+        :headline="page.title"
+        :subtext="page.subtitle"
         half
       ></hero>
 
