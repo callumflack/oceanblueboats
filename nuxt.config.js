@@ -41,5 +41,8 @@ module.exports = {
   ],
   router: {
     middleware: 'currentPage'
-  }
+  },
+  modules: [
+    'nuxtent'
+  ]
 }
