@@ -8,7 +8,7 @@
       />
 
       <hero
-        backgroundImage="/rod-long.jpg"
+        :backgroundImage="page.heroImage"
         link="/about"
         half
       />
@@ -19,6 +19,8 @@
     <div class="container--md">
       <nav-in-page />
     </div>
+
+    <script src='/js/cloudinary.js'></script>
   </div>
 </template>
 

@@ -1,6 +1,7 @@
 ---
 title: The history
 subtitle: Precision fabircation with water-jet cutting techonology means we're more than capable.
+heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1503353159/rod-long-204281_nbrsdv.jpg
 ---
 
 This is now generated from markdown. But still, lorem ipsum.

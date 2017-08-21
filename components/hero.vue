@@ -6,7 +6,7 @@
         'text-white': backgroundImage
       }
     ]"
-    :style="backgroundImage ? `background-image: url(${backgroundImage})` : ''"
+    :data-bg="backgroundImage ? backgroundImage : ''"
   >
     <hero-link :link="link">
       <div class="container--md">
