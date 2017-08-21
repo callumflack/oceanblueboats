@@ -40,7 +40,6 @@
   --block-rg: 3rem;
   --block-rg: 5rem;
 
-  --container-width: 960px;
   --container-sm: 400px;
   --container-md: 700px;
   --container-rg: 960px;
@@ -280,8 +279,18 @@ textarea {
   }
 
   .container,
-  .container-md
+  .container--md,
   .container--lg {
     --container-width: var(--container-sm);
+  }
+}
+
+@media (max-width: 450px) {
+  .container--sm,
+  .container,
+  .container--md,
+  .container--lg {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
