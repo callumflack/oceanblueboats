@@ -1,34 +1,45 @@
 <template>
-  <nav
-    :class="{
-      hidden: isNavHidden,
-      fill: windowIsScrolled,
-      white: $store.state.currentPage === '/'
-    }"
-  >
-    <div class="nav-body">
-      <router-link class="logo" to="/">
-        OCEANBLUE BOATS
-      </router-link>
+  <div>
+    <mobile-nav :close="closeMobileNav" :visible="isMobileNavVisible" />
 
-      <a href="#" class="hamburger">
-        &#9776;
-      </a>
-    </div>
-  </nav>
+    <nav
+      :class="{
+        hidden: isNavHidden,
+        fill: windowIsScrolled,
+        white: $store.state.currentPage === '/'
+      }"
+    >
+      <div class="nav-body">
+        <router-link class="logo" to="/">
+          OCEANBLUE BOATS
+        </router-link>
+
+        <a href="#" class="hamburger" @click.prevent="handleNavToggle">
+          &#9776;
+        </a>
+      </div>
+    </nav>
+  </div>
 </template>
 
 <script>
+import MobileNav from '~/layouts/mixins/mobile-nav.vue'
+
 const transitionScrollPos = 200
 
 export default {
   name: 'navbar',
 
+  components: {
+    MobileNav
+  },
+
   data () {
     return {
       previousScrollPos: 0,
       windowIsScrolled: false,
-      isNavHidden: false
+      isNavHidden: false,
+      isMobileNavVisible: false
     }
   },
 
@@ -50,6 +61,15 @@ export default {
       this.isNavHidden = scrolledDown
 
       this.windowIsScrolled = scrollPos > transitionScrollPos
+    },
+
+    handleNavToggle () {
+      this.isMobileNavVisible = !this.isMobileNavVisible
+    },
+
+    closeMobileNav () {
+      console.log('clicked')
+      this.isMobileNavVisible = false
     }
   }
 }
