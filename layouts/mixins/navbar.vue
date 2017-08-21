@@ -77,14 +77,17 @@ export default {
 
 <style scoped>
 nav {
+  --transition-duration: 0.2s;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   background-color: transparent;
+  transform: translateY(0);
   transition:
-    background-color 0.2s,
-    opacity 0.2s;
+    background-color var(--transition-duration),
+    opacity var(--transition-duration),
+    transform 0s 0s;
 }
 
 .nav-body {
@@ -95,7 +98,7 @@ nav {
   margin: 1.4rem 1.1rem;
   border-bottom: 1px solid currentColor;
   transition:
-    border-bottom-color 0.2s;
+    border-bottom-color var(--transition-duration);
 }
 
 nav.white {
@@ -114,6 +117,11 @@ nav.fill .nav-body {
 
 nav.hidden {
   opacity: 0;
+  transform: translateY(-100%);
+  transition:
+    background-color var(--transition-duration),
+    opacity var(--transition-duration),
+    transform 0s var(--transition-duration);
 }
 
 .logo {
