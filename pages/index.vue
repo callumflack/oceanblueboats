@@ -51,6 +51,18 @@
       <form-contact />
     </div>
 
+    <a
+      :class="[
+        'go-top',
+        {
+          hidden: !scrolledNearBottom
+        }
+      ]"
+      @click.prevent="scrollToTop"
+    >
+      <h2>&uarr; Top</h2>
+    </a>
+
     <script src='/js/cloudinary.js'></script>
   </div>
 </template>
@@ -63,9 +75,53 @@ export default {
   components: {
     Hero,
     FormContact
+  },
+
+  data () {
+    return {
+      scrolledNearBottom: false
+    }
+  },
+
+  mounted () {
+    window.addEventListener('scroll', this.handleScroll)
+  },
+
+  methods: {
+    handleScroll (event) {
+      const offset = 550
+      const scrolledNearBottom = (window.scrollY + window.innerHeight) >= (document.body.scrollHeight - offset)
+
+      this.scrolledNearBottom = scrolledNearBottom
+    },
+
+    scrollToTop () {
+      window.scrollTo(0, 0)
+    }
   }
 }
 </script>
 
 <style scoped>
+.go-top {
+  --transition-duration: 0.2s;
+  --transition-debounce: 2.5s;
+  position: fixed;
+  right: 3.2rem;
+  bottom: 2rem;
+  font-weight: bold;
+  transform: translateY(0);
+  transition:
+    opacity var(--transition-duration) var(--transition-debounce),
+    transform 0s var(--transition-debounce);
+}
+
+
+.go-top.hidden {
+  opacity: 0;
+  transform: translateY(100vh);
+  transition:
+    opacity var(--transition-duration),
+    transform 0s var(--transition-duration);
+}
 </style>
