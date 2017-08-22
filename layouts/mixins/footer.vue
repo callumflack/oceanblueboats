@@ -8,10 +8,10 @@
       <div class='Grid-cell u-size1of2'>
         <ul>
           <li>
-            <a href="#">T: 0409 726 128</a>
+            <a href="tel:0409 726 128">T: 0409 726 128</a>
           </li>
           <li>
-            <a href="#">E: hi@oceanblueboats.com.au</a>
+            <a href="mailto:hi@oceanblueboats.com.au">E: hi@oceanblueboats.com.au</a>
           </li>
         </ul>
       </div>
@@ -32,13 +32,13 @@
       <div class='Grid-cell u-size1of2'>
         <ul>
           <li>
-            <a href="#">Open Mon-Fri, 9am-3.30pm</a>
+            Open Mon-Fri, 9am-3.30pm
           </li>
           <li>
-            <a href="#">116 Lyons Stree, Carins</a>
+            116 Lyons Stree, Carins
           </li>
           <li>
-            <a href="#">Queensland 4870 Australia</a>
+            Queensland 4870 Australia
           </li>
         </ul>
       </div>
@@ -46,10 +46,10 @@
       <div class='Grid-cell u-size1of2'>
         <ul>
           <li>
-            <a href="#">&copy; 2017 Oceanblue Boats</a>
+            &copy; 2017 Oceanblue Boats
           </li>
           <li>
-            <a href="#">Website by Patternworks</a>
+            <a href="https://www.patternworks.com.au/">Website by Patternworks</a>
           </li>
         </ul>
       </div>
