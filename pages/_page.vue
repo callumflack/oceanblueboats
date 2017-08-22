@@ -9,7 +9,6 @@
 
       <hero
         :backgroundImage="page.heroImage"
-        link="/about"
         half
       />
     </div>
