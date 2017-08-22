@@ -40,7 +40,25 @@ module.exports = {
     '~/assets/base.css'
   ],
   router: {
-    middleware: 'currentPage'
+    middleware: 'currentPage',
+    async scrollBehavior (to, from, savedPosition) {
+      setTimeout(() => {
+        // Pages using the _page.vue file share a savedPosition as they
+        // are all the same page to nuxt
+        // This is undesired so to scoll to top instead
+
+        if (to.matched[0] && to.matched[0].name === 'page') {
+          return window.scrollTo(0, 0)
+        }
+
+        const scrollTo = Object.assign({
+          x: 0,
+          y: 0
+        }, savedPosition)
+
+        window.scrollTo(scrollTo.x, scrollTo.y)
+      }, 400)
+    }
   },
   modules: [
     'nuxtent'

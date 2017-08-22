@@ -4,11 +4,11 @@
 
     <nav>
       <li>
-        <a class="display" href="/">Oceanblue Boats</a>
+        <nuxt-link class="display" to="/">Oceanblue Boats</nuxt-link>
       </li>
 
       <li v-for="link in navLinks">
-        <a :href='link.link'>{{link.label}}</a>
+        <nuxt-link :to='link.link'>{{link.label}}</nuxt-link>
       </li>
     </nav>
   </div>

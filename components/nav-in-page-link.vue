@@ -1,9 +1,9 @@
 <template>
   <li>
-    <a :href='link'>
+    <nuxt-link :to='link'>
       <span class="icon" v-if='link === $store.state.currentPage'>&rarr;</span>
       {{label}}
-    </a>
+    </nuxt-link>
   </li>
 </template>
 
