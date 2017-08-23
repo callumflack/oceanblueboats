@@ -6,6 +6,7 @@
         subtext="Custom plate boats made for"
         reverse
         backgroundImage="https://res.cloudinary.com/pw-img-cdn/image/upload/v1503353159/rod-long-204281_nbrsdv.jpg"
+        opacity="0.8"
         link="/"
       />
 
