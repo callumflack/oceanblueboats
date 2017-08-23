@@ -86,7 +86,7 @@ export default {
   --transition-duration: 0.2s;
   --transition-delayed: 0.4s;
   position: fixed;
-  z-index: 2;
+  z-index: 15;
   top: 0;
   bottom: 0;
   left: 0;
