@@ -1,6 +1,6 @@
 <template>
   <div>
-    <mobile-nav :close="closeMobileNav" :visible="isMobileNavVisible" />
+    <mobile-nav :close="closeMobileNav" :hidden="isMobileNavHidden" />
 
     <nav
       :class="{
@@ -39,7 +39,7 @@ export default {
       previousScrollPos: 0,
       windowIsScrolled: false,
       isNavHidden: false,
-      isMobileNavVisible: false
+      isMobileNavHidden: true
     }
   },
 
@@ -64,12 +64,11 @@ export default {
     },
 
     handleNavToggle () {
-      this.isMobileNavVisible = !this.isMobileNavVisible
+      this.isMobileNavHidden = !this.isMobileNavHidden
     },
 
     closeMobileNav () {
-      console.log('clicked')
-      this.isMobileNavVisible = false
+      this.isMobileNavHidden = true
     }
   }
 }

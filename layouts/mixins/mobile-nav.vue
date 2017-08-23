@@ -1,13 +1,22 @@
 <template>
-  <div @click="close" :class="['mobile-nav', { visible }]">
+  <div
+    @click="close"
+    :class="[
+      'mobile-nav',
+      {
+        hidden,
+        'delay-transition': delayTransition
+      }
+    ]"
+  >
     <a class="close">&#10005;</a>
 
     <nav>
-      <li>
+      <li @click='applyDelayTransition'>
         <nuxt-link class="display" to="/">Oceanblue Boats</nuxt-link>
       </li>
 
-      <li v-for="link in navLinks">
+      <li @click='applyDelayTransition' v-for="link in navLinks">
         <nuxt-link :to='link.link'>{{link.label}}</nuxt-link>
       </li>
     </nav>
@@ -19,7 +28,7 @@ export default {
   name: 'mobile-nav',
 
   props: {
-    visible: Boolean,
+    hidden: Boolean,
     close: Function
   },
 
@@ -45,7 +54,22 @@ export default {
           label: 'The designs',
           link: '/the-designs'
         }
-      ]
+      ],
+      delayTransition: false
+    }
+  },
+
+  methods: {
+    applyDelayTransition (event) {
+      if (event.target.getAttribute('href') === this.$route.path) {
+        return
+      }
+
+      this.delayTransition = true
+
+      setTimeout(() => {
+        this.delayTransition = false
+      }, 1000)
     }
   }
 }
@@ -59,18 +83,34 @@ export default {
 }
 
 .mobile-nav {
+  --transition-duration: 0.2s;
+  --transition-delayed: 0.4s;
   position: fixed;
   z-index: 2;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  display: none;
   background-color: #fff;
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity var(--transition-duration),
+    transform 0s 0s;
 }
 
-.mobile-nav.visible {
-  display: block;
+.mobile-nav.hidden {
+  opacity: 0;
+  transform: translateY(100vh);
+  transition:
+    opacity var(--transition-duration),
+    transform 0s var(--transition-duration);
+}
+
+.mobile-nav.delay-transition {
+  transition:
+    opacity var(--transition-duration) var(--transition-delayed),
+    transform 0s var(--transition-delayed);
 }
 
 nav {
