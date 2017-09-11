@@ -1,11 +1,6 @@
 <template>
   <section
-    :class="[
-      'hero',
-      {
-        'text-white': backgroundImage
-      }
-    ]"
+    :class="['hero', { 'text-white': backgroundImage }]"
     :data-bg="backgroundImage ? backgroundImage : ''"
   >
     <div

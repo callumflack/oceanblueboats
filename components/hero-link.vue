@@ -7,6 +7,7 @@
     <div v-else>
       <slot />
     </div>
+
   </div>
 </template>
 

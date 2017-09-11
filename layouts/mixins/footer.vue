@@ -35,7 +35,7 @@
             Open Mon-Fri, 9am-3.30pm
           </li>
           <li>
-            116 Lyons Stree, Carins
+            116 Lyons Street, Cairns
           </li>
           <li>
             Queensland 4870 Australia

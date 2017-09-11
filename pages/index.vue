@@ -53,12 +53,9 @@
     </div>
 
     <a
-      :class="[
-        'go-top',
-        {
-          hidden: !scrolledNearBottom
-        }
-      ]"
+      :class="['go-top', {
+        hidden: !scrolledNearBottom
+      }]"
       @click.prevent="scrollToTop"
     >
       <h2>&uarr; Top</h2>
@@ -116,7 +113,6 @@ export default {
     opacity var(--transition-duration) var(--transition-debounce),
     transform 0s var(--transition-debounce);
 }
-
 
 .go-top.hidden {
   opacity: 0;
