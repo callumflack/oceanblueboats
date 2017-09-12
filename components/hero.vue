@@ -2,7 +2,7 @@
   <section
     :class="['hero', { 'text-white': backgroundImage }]"
   >
-    <img class='hero-background-image' :data-bg="backgroundImage ? backgroundImage : ''" />
+    <img v-if="backgroundImage" class="hero-background-image" :data-bg="backgroundImage ? backgroundImage : ''" />
 
     <div
       class='filter'
