@@ -1,8 +1,9 @@
 <template>
   <section
     :class="['hero', { 'text-white': backgroundImage }]"
-    :data-bg="backgroundImage ? backgroundImage : ''"
   >
+    <img class='hero-background-image' :data-bg="backgroundImage ? backgroundImage : ''" />
+
     <div
       class='filter'
       :style='filterStyle'
@@ -56,6 +57,17 @@ export default {
   position: relative;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
+}
+
+.hero-background-image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 .hero.text-white {
