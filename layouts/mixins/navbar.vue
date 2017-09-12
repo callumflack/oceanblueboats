@@ -1,74 +1,24 @@
 <template>
-  <div>
-    <mobile-nav :close="closeMobileNav" :hidden="isMobileNavHidden" />
+  <nav>
+    <div class="nav-body">
+      <router-link class="logo" to="/">
+        OCEANBLUE BOATS
+      </router-link>
 
-    <nav
-      :class="{
-        hidden: isNavHidden,
-        fill: windowIsScrolled,
-        white: $store.state.currentPage === '/'
-      }"
-    >
-      <div class="nav-body">
-        <router-link class="logo" to="/">
-          OCEANBLUE BOATS
-        </router-link>
-
-        <a href="#" class="hamburger" @click.prevent="handleNavToggle">
-          &#9776;
-        </a>
-      </div>
-    </nav>
-  </div>
+      <a href="#" class="hamburger" @click.prevent="handleNavToggle">
+        &#9776;
+      </a>
+    </div>
+  </nav>
 </template>
 
 <script>
-import MobileNav from '~/layouts/mixins/mobile-nav.vue'
-
-const transitionScrollPos = 200
-
 export default {
   name: 'navbar',
 
-  components: {
-    MobileNav
-  },
-
-  data () {
-    return {
-      previousScrollPos: 0,
-      windowIsScrolled: false,
-      isNavHidden: false,
-      isMobileNavHidden: true
-    }
-  },
-
-  mounted () {
-    if (window.scrollY > transitionScrollPos) {
-      this.windowIsScrolled = true
-    }
-
-    window.addEventListener('scroll', this.handleScroll)
-  },
-
   methods: {
-    handleScroll (event) {
-      const scrollPos = window.scrollY
-      const previousScrollPos = this.previousScrollPos
-      this.previousScrollPos = scrollPos
-      const scrolledDown = scrollPos > previousScrollPos
-
-      this.isNavHidden = scrolledDown
-
-      this.windowIsScrolled = scrollPos > transitionScrollPos
-    },
-
     handleNavToggle () {
-      this.isMobileNavHidden = !this.isMobileNavHidden
-    },
-
-    closeMobileNav () {
-      this.isMobileNavHidden = true
+      this.$store.commit('SET_MODAL_VISIBILITY', !this.$store.state.isMobileNavVisible)
     }
   }
 }
@@ -77,7 +27,7 @@ export default {
 <style scoped>
 nav {
   --transition-duration: 0.2s;
-  position: fixed;
+  position: absolute;
   z-index: 10;
   top: 0;
   left: 0;

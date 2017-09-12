@@ -1,6 +1,8 @@
 <template>
   <div>
     <navbar />
+    <navbar-floating />
+    <mobile-nav />
 
     <nuxt/>
 
@@ -12,11 +14,16 @@
 
 <script>
 import Navbar from '~/layouts/mixins/navbar.vue'
+import NavbarFloating from '~/layouts/mixins/navbar-floating.vue'
+import MobileNav from '~/layouts/mixins/mobile-nav.vue'
+
 import AppFooter from '~/layouts/mixins/footer.vue'
 
 export default {
   components: {
     Navbar,
+    NavbarFloating,
+    MobileNav,
     AppFooter
   }
 }

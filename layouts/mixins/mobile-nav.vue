@@ -4,7 +4,7 @@
     :class="[
       'mobile-nav',
       {
-        hidden,
+        hidden: !isVisible,
         'delay-transition': delayTransition
       }
     ]"
@@ -26,11 +26,6 @@
 <script>
 export default {
   name: 'mobile-nav',
-
-  props: {
-    hidden: Boolean,
-    close: Function
-  },
 
   data () {
     return {
@@ -59,6 +54,12 @@ export default {
     }
   },
 
+  computed: {
+    isVisible: function () {
+      return this.$store.state.isMobileNavVisible
+    }
+  },
+
   methods: {
     applyDelayTransition (event) {
       if (event.target.getAttribute('href') === this.$route.path) {
@@ -70,6 +71,10 @@ export default {
       setTimeout(() => {
         this.delayTransition = false
       }, 1000)
+    },
+
+    close () {
+      this.$store.commit('SET_MODAL_VISIBILITY', false)
     }
   }
 }
