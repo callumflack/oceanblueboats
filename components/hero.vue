@@ -3,7 +3,7 @@
     :class="['hero', { 'text-white': backgroundImage }]"
     :style="{ backgroundImage: 'url(' + backgroundImage + ')' }"
   >
-    <img v-if="backgroundImage" class="hero-background-image" :data-bg="backgroundImage ? backgroundImage : ''" />
+    <!-- <img v-if="backgroundImage" class="hero-background-image" :data-bg="backgroundImage ? backgroundImage : ''" /> -->
 
     <div
       class='filter'
@@ -82,7 +82,7 @@ export default {
   margin-bottom: 4px;
 
   @media (--lg-viewport) {
-    margin-bottom: 8px;
+    margin-bottom: 4px;
   }
 }
 
