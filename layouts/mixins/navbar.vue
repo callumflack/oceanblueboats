@@ -1,5 +1,9 @@
 <template>
-  <nav>
+  <nav
+    :class="{
+      white: $store.state.currentPage === '/'
+    }"
+  >
     <div class="nav-body">
       <router-link class="smallheader" to="/">
         OCEANBLUE BOATS
