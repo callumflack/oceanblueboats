@@ -178,7 +178,6 @@ a {
 
 .icon {
   margin-left: 0.2rem;
-  font-weight: bold;
 }
 
 hr {
@@ -250,7 +249,22 @@ textarea {
   position: relative;
 }
 
-.nav-body {
+.Navbar {
+  --transition-duration: 0.2s;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  transform: translateY(0);
+  transition:
+    background-color var(--transition-duration),
+    opacity var(--transition-duration),
+    transform 0s 0s;
+}
+
+.Navbar-body {
   align-items: flex-end;
   border-bottom: 1px solid currentColor;
   display: flex;
