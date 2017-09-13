@@ -36,6 +36,9 @@
   "now": {
     "alias": [
       "oceanblueboats.now.sh"
-    ]
+    ],
+    "env": {
+      "NODE_ENV": "production"
+    }
   }
 }
