@@ -6,7 +6,7 @@
       </router-link>
 
       <a href="#" @click.prevent="handleNavToggle">
-        <svgicon name="hamburger" width="23" height="18" color="#333333"></svgicon>
+        <svgicon name="hamburger" width="23" height="18"></svgicon>
       </a>
     </div>
   </nav>
