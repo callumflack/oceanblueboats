@@ -1,17 +1,15 @@
 <template>
-  <div>
-    <nav>
-      <div class="nav-body">
-        <router-link class="smallheader" to="/">
-          OCEANBLUE BOATS
-        </router-link>
+  <nav>
+    <div class="nav-body">
+      <router-link class="smallheader" to="/">
+        OCEANBLUE BOATS
+      </router-link>
 
-        <a href="#" @click.prevent="handleNavToggle">
-          <svgicon name="hamburger" width="23" height="18" color="#333333"></svgicon>
-        </a>
-      </div>
-    </nav>
-  </div>
+      <a href="#" @click.prevent="handleNavToggle">
+        <svgicon name="hamburger" width="23" height="18" color="#333333"></svgicon>
+      </a>
+    </div>
+  </nav>
 </template>
 
 
