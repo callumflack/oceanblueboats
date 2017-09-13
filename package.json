@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "nuxt",
     "build": "npm run build-suit && nuxt build",
-    "build-suit": "suitcss assets/src/suit.css assets/suit.css build",
+    "build-suit": "suitcss assets/suit-index.css assets/suit.css build",
+    "svg": "vsvg -s static/icons-src -t static/icons",
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
@@ -15,8 +16,8 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "3.1.2",
-    "nuxt": "1.0.0-rc3",
-    "nuxtent": "0.2.73",
+    "nuxt": "1.0.0-rc11",
+    "nuxtent": "^0.2.78",
     "suitcss": "3.0.0",
     "suitcss-preprocessor": "4.0.0"
   },

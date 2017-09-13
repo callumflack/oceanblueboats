@@ -1,7 +1,7 @@
 ---
 title: The factory
 subtitle: We're boat-lovers who build boats. With 23 years experience, your dream is in good hands.
-heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1503353159/rod-long-204281_nbrsdv.jpg
+heroImage: /images/obb-factory.jpg
 ---
 
 This is now generated from markdown. But still, lorem ipsum.

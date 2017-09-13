@@ -1,6 +1,7 @@
 <template>
   <section
     :class="['hero', { 'text-white': backgroundImage }]"
+    :style="{ backgroundImage: 'url(' + backgroundImage + ')' }"
   >
     <img v-if="backgroundImage" class="hero-background-image" :data-bg="backgroundImage ? backgroundImage : ''" />
 
@@ -9,34 +10,34 @@
       :style='filterStyle'
     />
     <hero-link :link="link">
-      <div class="container--md">
+      <Container>
         <div :class="['hero-body', { 'hero-body--half': half }]">
-          <div :class="['columns', { reverse }]">
-            <h1 class="display">{{headline}}</h1>
-            <h4 class="subtext">{{subtext}}</h4>
+          <div :class="['columns u-size5of6 u-size3of4', { reverse }]">
+            <h1 class="header">{{headline}}</h1>
+            <h4 class="lede">{{subtext}}</h4>
           </div>
         </div>
-      </div>
+      </Container>
     </hero-link>
   </section>
 </template>
 
+
 <script>
+import Container from '~/components/container.vue'
 import HeroLink from '~/components/hero-link.vue'
 
 export default {
   name: 'hero',
-
   components: {
+    Container,
     HeroLink
   },
-
   computed: {
     filterStyle () {
-      return this.opacity ? `background-color: rgba(0, 0, 0, ${1 - this.opacity})` : ''
+      return this.filterOpacity ? `background-color: rgba(0, 0, 0, ${1 - this.filterOpacity})` : ''
     }
   },
-
   props: {
     headline: String,
     subtext: String,
@@ -44,7 +45,7 @@ export default {
     link: String,
     reverse: Boolean,
     half: Boolean,
-    opacity: {
+    filterOpacity: {
       type: String,
       default: '1'
     }
@@ -52,7 +53,10 @@ export default {
 }
 </script>
 
+
 <style scoped>
+@import "../assets/vars.css";
+
 .hero {
   position: relative;
   background-size: cover;
@@ -75,7 +79,11 @@ export default {
 }
 
 .hero:not(:last-child) {
-  margin-bottom: 0.5rem;
+  margin-bottom: 4px;
+
+  @media (--lg-viewport) {
+    margin-bottom: 8px;
+  }
 }
 
 .filter {
@@ -94,21 +102,36 @@ export default {
   justify-content: stretch;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 50vh;
+
+  @media (--sm-viewport) {
+    height: 70vh;
+  }
+
+  @media (--lg-viewport) {
+    height: 90vh;
+  }
 }
 
 .hero-body--half {
   height: auto;
-  min-height: 50vh;
+  min-height: 45vh;
 }
 
 .columns {
   display: flex;
   flex-direction: column;
-  max-width: 600px;
 }
 
 .columns.reverse {
   flex-direction: column-reverse;
+}
+
+.header {
+  transform: translateX(-3px);
+}
+
+.hero:nth-of-type(4) .columns {
+  width: 50%;
 }
 </style>

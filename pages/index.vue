@@ -1,56 +1,57 @@
 <template>
-  <div>
+  <main>
     <div>
       <hero
         headline="Far-away places"
         subtext="Custom plate boats made for"
         reverse
-        backgroundImage="https://res.cloudinary.com/pw-img-cdn/image/upload/v1503353159/rod-long-204281_nbrsdv.jpg"
-        opacity="0.8"
-        link="/"
+        backgroundImage="/images/obb-hero.jpg"
       />
 
       <hero
         headline="The history"
-        subtext="EST. Carins 2002. But it all started much earlier that that."
-        backgroundImage="https://res.cloudinary.com/pw-img-cdn/image/upload/v1503353159/rod-long-204281_nbrsdv.jpg"
+        subtext="Established Cairns 2002. But it all started much earlier that that."
+        backgroundImage="/images/obb-history.jpg"
+        filterOpacity="0.8"
         link="/the-history"
       />
 
       <hero
         headline="The factory"
-        subtext="Vince's hanger-sized dream shed. We do general repairs and refits too."
-        backgroundImage="https://res.cloudinary.com/pw-img-cdn/image/upload/v1503353159/rod-long-204281_nbrsdv.jpg"
+        subtext="Vince's hanger-sized dream shed. Big and capable."
+        backgroundImage="/images/obb-factory.jpg"
+        filterOpacity="0.3"
         link="/the-factory"
       />
 
       <hero
         headline="The process"
         subtext="Precision fabrication with water-jet cutting technology."
-        backgroundImage="https://res.cloudinary.com/pw-img-cdn/image/upload/v1503353159/rod-long-204281_nbrsdv.jpg"
+        backgroundImage="/images/obb-process.jpg"
+        filterOpacity="0.8"
         link="/the-process"
       />
 
       <hero
         headline="The boat builders"
-        subtext="Boat-lovers, from hair to toes"
-        backgroundImage="https://res.cloudinary.com/pw-img-cdn/image/upload/v1503353108/about-hero-160812-team_fc4zkf.jpg"
+        subtext="Boat-lovers, from hair to toes."
+        backgroundImage="/images/obb-team.jpg"
+        filterOpacity="0.6"
         link="/the-boat-builders"
       />
 
       <hero
         headline="The designs"
-        subtext="Start here. We'll customise to your dreams"
+        subtext="Start your dream boat here."
         backgroundImage="https://res.cloudinary.com/pw-img-cdn/image/upload/v1503353103/RMP-main-img_iuuzym.jpg"
+        filterOpacity="0.8"
         link="/the-designs"
       />
     </div>
 
-    <div class="block" />
-
-    <div class="container--md">
+    <Block>
       <form-contact />
-    </div>
+    </Block>
 
     <a
       :class="['go-top', {
@@ -58,20 +59,24 @@
       }]"
       @click.prevent="scrollToTop"
     >
-      <h2>&uarr; Top</h2>
+      <span class="smallheader">&uarr; Top</span>
     </a>
 
     <script src='/js/cloudinary.js'></script>
-  </div>
+  </main>
 </template>
 
 <script>
 import Hero from '~/components/hero.vue'
+import Container from '~/components/container.vue'
+import Block from '~/components/block.vue'
 import FormContact from '~/components/form-contact.vue'
 
 export default {
   components: {
     Hero,
+    Container,
+    Block,
     FormContact
   },
 
@@ -101,13 +106,15 @@ export default {
 </script>
 
 <style scoped>
+@import "../assets/vars.css";
+
 .go-top {
   --transition-duration: 0.2s;
   --transition-debounce: 2.5s;
   position: fixed;
-  right: 3.2rem;
-  bottom: 2rem;
-  font-weight: bold;
+  right: 0;
+  bottom: 0;
+  padding: calc(1.5 * var(--grid-gutter));
   transform: translateY(0);
   transition:
     opacity var(--transition-duration) var(--transition-debounce),
@@ -121,4 +128,6 @@ export default {
     opacity var(--transition-duration),
     transform 0s var(--transition-duration);
 }
+
+
 </style>

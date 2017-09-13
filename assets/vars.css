@@ -1,0 +1,85 @@
+/*
+ * Vars
+ * --------------------
+ */
+
+:root {
+  @custom-media --sm-viewport (width >= 32em);
+  @custom-media --md-viewport (width >= 48em);
+  @custom-media --lg-viewport (width >= 80em);
+
+  --grid-gutter: 24px;
+
+  --block-sm: 3rem;
+  --block-md: 3rem;
+  --block-rg: 5rem;
+  --block: 10vh;
+  --blockPlusNav: calc(var(--block) + 86px);
+
+  --container-sm: 700px;
+  --container-rg: 1008px;
+  --container-lg: 1140px;
+
+  --s1: 4px;
+  --s2: 8px;
+  --s2a: 12px;
+  --s3: 16px;
+  --s3a: 24px;
+  --s4: 32px;
+  --s5: 64px;
+  --s6: 128px;
+  --s7: 192px;
+  --s8: 256px;
+
+  --color-brand: #0b3059;
+  --color-text: #333;
+  --color-text-lite: #808080;
+  --color-grey: #F2F2F2;
+  --color-bg: #fefefe;
+
+  --font-header: "MFred";
+  --font-subheader: "EquitySC";
+  --font-text: "Equity";
+
+  --f1: 11px;
+  --f2: 13px;
+  --f3: 16px;
+  --f4: 18px;
+  --f5: 21px;
+  --f6: 26px;
+  --f7: 33px;
+  --f8: 48px;
+  --f9: 96px;
+
+  --header-s1: 48px;
+  --header-s2: 72px;
+  --header-s3: 96px;
+
+  --smallheader-s1: 16px;
+  --smallheader-s2: 20px;
+  --smallheader-s3: 23px;
+
+  --lede-s1: 16px;
+  --lede-s2: 21px;
+  --lede-s3: 26px;
+
+  --text-s1: 18px;
+  --text-s2: 21px;
+  --text-s3: 26px;
+
+  --text-sm-s1: 13px;
+  --text-sm-s2: 17px;
+  --text-sm-s3: 20px;
+
+
+
+
+  --letter-spacing-text: 0;
+  --letter-spacing-header: 0.025em;
+  --letter-spacing-subheader: 0.02em;
+
+  --line-height-meta: 1.45;
+  --line-height-text: 1.3;
+  --line-height-header: 1;
+  --line-height-subheader: 1.25;
+}

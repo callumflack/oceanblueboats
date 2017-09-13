@@ -1,11 +1,12 @@
 <template>
   <div>
-    <div class="u-inlineBlock font-header">
+    <div class="u-inlineBlock smallheader">
       <hr>
 
-      <ul>
+      <ul class="Root">
         <nav-in-page-link
           v-for="link in navLinks"
+          class="smallheader"
           :key="link.label"
           :label="link.label"
           :link="link.link"
@@ -59,17 +60,23 @@ export default {
 </script>
 
 <style scoped>
-ul {
+@import "../assets/vars.css";
+
+.Root ul {
   display: inline-block;
   padding-right: 1.5rem;
 }
 
-li {
+.Root li {
   line-height: 1.5;
-}
 
-li.active::before {
-  content: 'asdf';
-  color: red;
+  & + li {
+    margin-top: var(--s2);
+
+    @media (--sm-viewport) {
+      margin-top: var(--s1);
+      margin-top: 0;
+    }
+  }
 }
 </style>

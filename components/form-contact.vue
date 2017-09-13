@@ -1,19 +1,19 @@
 <template>
-  <div>
-    <div class="display">Let's Talk</div>
-    <div class="subtext">Got questions, ideas? Drop in or write:</div>
+  <div class="u-size3of4">
+    <div class="header">Let's Talk</div>
+    <div class="lede">Got ideas? Write to us:</div>
 
-    <form action="#" method="post">
+    <form action="http://formspree.io/hi@oceanblueboats.com.au" method="post">
       <div class="form-group">
         <input placeholder="Your name*" name="name">
-        <input placeholder="Your email*" name="email">
-        <textarea rows='4' placeholder="How can we help make your dream boat?" name="message" />
-
+        <input placeholder="Your email*" type="email" name="email">
+        <textarea rows="4" placeholder="How can we help make your dream boat?" name="message" />
         <div class="u-textRight">
-          <button class="button-fill" type="submit">Submit <span class="icon">&rarr;</span></button>
+          <button class="lede button-fill" type="submit">Submit ›</button>
         </div>
       </div>
     </form>
+
   </div>
 </template>
 
@@ -24,4 +24,5 @@ export default {
 </script>
 
 <style scoped>
+
 </style>

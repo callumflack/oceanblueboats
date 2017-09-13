@@ -1,8 +1,7 @@
 <template>
   <div
     @click="close"
-    :class="[
-      'mobile-nav',
+    :class="['mobile-nav',
       {
         hidden: !isVisible,
         'delay-transition': delayTransition
@@ -11,21 +10,36 @@
   >
     <a class="close">&#10005;</a>
 
-    <nav>
-      <li @click='applyDelayTransition'>
-        <nuxt-link class="display" to="/">Oceanblue Boats</nuxt-link>
-      </li>
+    <Block title textColumn>
+      <nav>
+        <!-- <li @click='applyDelayTransition'>
+          <nuxt-link class="header" to="/">Oceanblue Boats</nuxt-link>
+        </li> -->
 
-      <li @click='applyDelayTransition' v-for="link in navLinks">
-        <nuxt-link :to='link.link'>{{link.label}}</nuxt-link>
-      </li>
-    </nav>
+        <li @click='applyDelayTransition' v-for="link in navLinks">
+          <nuxt-link class="header" :to='link.link'>{{link.label}}</nuxt-link>
+        </li>
+      </nav>
+    </Block>
+
+
   </div>
 </template>
 
 <script>
+import Block from '~/components/block.vue'
+
 export default {
   name: 'mobile-nav',
+
+  components: {
+    Block
+  },
+
+  props: {
+    hidden: Boolean,
+    close: Function
+  },
 
   data () {
     return {
@@ -81,6 +95,8 @@ export default {
 </script>
 
 <style scoped>
+@import "../../assets/vars.css";
+
 .close {
   position: fixed;
   right: 1.1rem;
@@ -90,18 +106,18 @@ export default {
 .mobile-nav {
   --transition-duration: 0.2s;
   --transition-delayed: 0.4s;
-  position: fixed;
-  z-index: 15;
-  top: 0;
+  background-color: #fff;
   bottom: 0;
   left: 0;
-  right: 0;
-  background-color: #fff;
   opacity: 1;
+  position: fixed;
+  right: 0;
+  top: 0;
   transform: translateY(0);
   transition:
     opacity var(--transition-duration),
     transform 0s 0s;
+  z-index: 15;
 }
 
 .mobile-nav.hidden {
@@ -119,27 +135,13 @@ export default {
 }
 
 nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100%;
-  font-size: var(--text-size-lg);
 }
 
 nav li {
-  display: inline-block;
+  list-style: none;
 }
 
 nav a {
   display: block;
-  line-height: 1.6;
-}
-
-nav .display {
-  line-height: 1;
-  margin-bottom: 1.25rem;
 }
 </style>

@@ -1,18 +1,32 @@
 <template>
-  <nav>
-    <div class="nav-body">
-      <router-link class="logo" to="/">
-        OCEANBLUE BOATS
-      </router-link>
+  <div>
+    <mobile-nav :close="closeMobileNav" :hidden="isMobileNavHidden" />
 
-      <a href="#" class="hamburger" @click.prevent="handleNavToggle">
-        &#9776;
-      </a>
-    </div>
-  </nav>
+    <nav
+      :class="{
+        hidden: isNavHidden,
+        fill: windowIsScrolled,
+        white: $store.state.currentPage === '/'
+      }"
+    >
+      <div class="nav-body">
+        <router-link class="smallheader" to="/">
+          OCEANBLUE BOATS
+        </router-link>
+
+        <a href="#" @click.prevent="handleNavToggle">
+          <icon name="hamburger" width="23" height="18" color="#333333"></icon>
+        </a>
+      </div>
+    </nav>
+  </div>
 </template>
 
+
+
 <script>
+import '~/static/icons'
+
 export default {
   name: 'navbar',
 
@@ -24,7 +38,11 @@ export default {
 }
 </script>
 
+
+
 <style scoped>
+@import "../../assets/vars.css";
+
 nav {
   --transition-duration: 0.2s;
   position: absolute;
@@ -41,28 +59,33 @@ nav {
 }
 
 .nav-body {
+  align-items: flex-end;
+  border-bottom: 1px solid currentColor;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-end;
-  margin: 1.4rem 1.1rem;
-  border-bottom: 1px solid currentColor;
+  margin: var(--grid-gutter);
+  padding-bottom: var(--s2);
   transition:
     border-bottom-color var(--transition-duration);
 }
 
 nav.white {
-  color: #fff;
+  color: white;
 }
 
 nav.fill {
+  background-color: var(--color-bg);
+  border-bottom: 1px solid currentColor;
+  /*box-shadow:
+    0 6px 30px 5px rgba(0,0,0,0.03),
+    0 9px 20px 3px rgba(0,0,0,0.06);*/
   color: var(--color-brand);
-  background-color: #fff;
 }
 
 nav.fill .nav-body {
   border-bottom-color: transparent;
-  padding-bottom: 0;
+  /*padding-bottom: 0;*/
 }
 
 nav.hidden {
@@ -74,12 +97,4 @@ nav.hidden {
     transform 0s var(--transition-duration);
 }
 
-.logo {
-  font-family: var(--font-header);
-  letter-spacing: 0.105rem;
-}
-
-nav .hamburger {
-  font-weight: bold;
-}
 </style>

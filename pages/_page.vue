@@ -1,23 +1,23 @@
 <template>
   <div>
     <div>
-      <hero
-        :headline="page.title"
-        :subtext="page.subtitle"
-        half
-      />
+      <Block title textColumn>
+        <h1 class="header">{{page.title}}</h1>
+        <h4 class="lede">{{page.subtitle}}</h4>
+      </Block>
 
       <hero
         :backgroundImage="page.heroImage"
-        half
       />
     </div>
 
-    <div class="block container--md" v-html="page.body" />
+    <Block>
+      <div class="u-size5of6 u-sm-size3of4" v-html="page.body" />
+    </Block>
 
-    <div class="container--md">
+    <Block>
       <nav-in-page />
-    </div>
+    </Block>
 
     <script src='/js/cloudinary.js'></script>
   </div>
@@ -25,11 +25,13 @@
 
 <script>
 import Hero from '~/components/hero.vue'
+import Block from '~/components/block.vue'
 import NavInPage from '~/components/nav-in-page.vue'
 
 export default {
   components: {
     Hero,
+    Block,
     NavInPage
   },
 

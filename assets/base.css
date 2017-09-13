@@ -1,60 +1,65 @@
 
+@import "vars.css";
+
+
 /*
- * Fonts
+ * Base
  * --------------------
  */
 
 @font-face {
-  font-family: "MFred";
+  font-family: var(--font-header);
   src: url("/fonts/MFred.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "Equity";
-  src: url("/fonts/equity-regular-webfont.woff") format("woff");
+  font-family: var(--font-subheader);
+  font-family: "EquitySC";
+  src: url("/fonts/equity-sc-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 
-
-:root {
-  --color-brand: #0B305A;
-  --color-grey: #F2F2F2;
-
-  --font: "Equity";
-  --font-header: "MFred";
-  --font-color: #333;
-  --line-height: 1.45;
-
-  --text-size-xlg: 1.366rem;
-  --text-size-lg: 1.125rem;
-  --text-size-rg: 22px;
-  --text-size-sm: 0.93rem;
-  --text-size-xsm: 0.79rem;
-
-  --header-size-lg: 4.498rem;
-  --header-size-rg: 2.827rem;
-  --header-size-sm: 1.999rem;
-  --header-size-xsm: 1.414rem;
-
-  --block-sm: 3rem;
-  --block-md: 3rem;
-  --block-rg: 3rem;
-  --block-rg: 5rem;
-
-  --container-sm: 400px;
-  --container-md: 700px;
-  --container-rg: 960px;
-  --container-lg: 1200px;
+@font-face {
+  font-family: var(--font-text);
+  src: url("/fonts/equity-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 
 html {
-  font-size: var(--text-size-rg);
 }
 
+/*
+ * the body font-size & font-weight is used by:
+ * p, li & .lede
+ */
 body {
-  background-color: #fff;
+  background-color: var(--color-bg);
   color: var(--color-brand);
-  font-family: var(--font);
-  line-height: var(--line-height);
+  font-family: var(--font-text);
+  font-size: var(--text-s1);
+  font-weight: normal;
+  line-height: var(--line-height-text);
+  text-rendering: geometricPrecision;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+
+  @media (--sm-viewport) {
+    font-size: var(--text-s2);
+  }
+
+  @media (--lg-viewport) {
+    font-size: var(--text-s3);
+  }
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
 }
 
 
@@ -71,30 +76,62 @@ h5 {
   font-weight: normal;
 }
 
-.display {
+.header {
   font-family: var(--font-header);
-  font-size: var(--header-size-lg);
+  font-size: var(--header-s1);
+  font-weight: normal;
   line-height: 1;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.015em;
+  margin: var(--s2) 0;
   text-transform: uppercase;
+
+  @media (--sm-viewport) {
+    font-size: var(--header-s2);
+  }
+
+  @media (--lg-viewport) {
+    font-size: var(--header-s3);
+  }
 }
 
-.subtext {
-  line-height: 1.75;
+.lede {
+  font-family: var(--font-subheader);
+  font-weight: normal;
+  line-height: 1.25;
+  letter-spacing: 0.015em;
+  text-transform: lowercase;
+}
+
+.smallheader {
+  font-family: var(--font-header);
+  font-size: var(--smallheader-s2);
+  font-weight: normal;
   text-transform: uppercase;
-  letter-spacing: 0.14rem;
+  letter-spacing: 0.075em;
+
+  @media (--sm-viewport) {
+    font-size: var(--smallheader-s3);
+  }
 }
 
 small,
 .small {
-  font-size: var(--text-size-sm);
-  line-height: 1.3;
+  font-size: var(--text-sm-s1);
+  font-weight: normal;
+
+  @media (--sm-viewport) {
+    font-size: var(--text-sm-s2);
+  }
+
+  @media (--lg-viewport) {
+    font-size: var(--text-sm-s3);
+  }
 }
 
-.font-header {
-  font-family: var(--font-header);
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
+p,
+ul,
+li {
+  font-family: var(--font-text);
 }
 
 p {
@@ -102,7 +139,7 @@ p {
 }
 
 p + p {
-  margin-top: 1.3em;
+  margin-top: var(--s4);
 }
 
 
@@ -131,7 +168,6 @@ a {
   color: #fff;
   padding: 0.85rem 1.5rem;
   border-radius: 4px;
-  text-transform: uppercase;
 }
 
 
@@ -146,13 +182,14 @@ a {
 }
 
 hr {
-  margin: 0.8rem 0;
   border: 0;
   border-bottom: 1px solid var(--color-brand);
-}
+  margin: 0;
+  margin-bottom: var(--s2a);
 
-img {
-  max-width: 100%;
+  @media (--sm-viewport) {
+    margin-bottom: 20px;
+  }
 }
 
 
@@ -162,7 +199,11 @@ img {
  */
 
 form {
-  margin-top: 2.5rem;
+  margin-top: var(--s4);
+
+  @media (--lg-viewport) {
+    margin-top: var(--s5);
+  }
 }
 
 input:not([type-file]),
@@ -173,19 +214,25 @@ button {
 
 input:not([type-file]),
 textarea {
-  padding: 0.8rem 1.1rem;
+  padding: 1rem 1.25rem;
   font-family: inherit;
   font-size: inherit;
-  font-size: var(--text-size-lg);
 }
 
 input:not([type-file]),
 select,
 textarea {
-  display: block;
-  width: 100%;
-  margin-bottom: 1rem;
   background-color: var(--color-grey);
+  display: block;
+  margin-bottom: var(--s3);
+  width: 100%;
+}
+
+textarea {
+  max-width: 100%;
+  min-width: 100%;
+  min-height: calc(1.5 * var(--block));
+
 }
 
 .form-group {
@@ -193,104 +240,12 @@ textarea {
 }
 
 
-
 /*
- * Blocks + Containers
+ * Elements
  * --------------------
  */
 
-.block--sm,
-.block,
-.block--md,
-.block--lg {
-  padding-top: var(--block-padding);
-  padding-bottom: var(--block-padding);
-}
-
-.block--sm {
-  --block-padding: var(--block-sm);
-}
-
-.block {
-  --block-padding: var(--block-rg);
-}
-
-.block--md {
-  --block-padding: var(--block-md);
-}
-
-.block--lg {
-  --block-padding: var(--block-sm);
-}
-
-
-.container--sm,
-.container,
-.container--md,
-.container--lg {
-  padding-left: calc(50% - (var(--container-width) / 2));
-  padding-right: calc(50% - (var(--container-width) / 2));
-}
-
-.container--sm {
-  --container-width: var(--container-sm);
-}
-
-.container {
-  --container-width: var(--container-rg);
-}
-
-.container--md {
-  --container-width: var(--container-md);
-}
-
-.container--lg {
-  --container-width: var(--container-lg);
-}
-
-
-@media (max-width: 1300px) {
-  .block--lg {
-    --block-padding: var(--block-md);
-  }
-
-  .container--lg {
-    --container-width: var(--container-md);
-  }
-}
-
-@media (max-width: 1060px) {
-  .block--md,
-  .block--lg {
-    --block-padding: var(--block-rg);
-  }
-
-  .container-md,
-  .container--lg {
-    --container-width: var(--container-rg);
-  }
-}
-
-@media (max-width: 800px) {
-  .block,
-  .block--md,
-  .block--lg {
-    --block-padding: var(--block-sm);
-  }
-
-  .container,
-  .container--md,
-  .container--lg {
-    --container-width: var(--container-sm);
-  }
-}
-
-@media (max-width: 450px) {
-  .container--sm,
-  .container,
-  .container--md,
-  .container--lg {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
+/* so we can adjust it within <p>s */
+.svg-icon {
+  position: relative;
 }

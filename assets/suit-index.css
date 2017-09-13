@@ -1,0 +1,9 @@
+@import "suitcss";
+
+@custom-media --sm-viewport (width >= 32em);
+@custom-media --md-viewport (width >= 48em);
+@custom-media --lg-viewport (width >= 80em);
+
+:root {
+  --Grid-gutter-size: 24px;
+}
