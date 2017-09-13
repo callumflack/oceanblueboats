@@ -8,25 +8,21 @@
       }
     ]"
   >
-    <div class="nav-body">
-      <router-link class="smallheader" to="/">
-        OCEANBLUE BOATS
-      </router-link>
-
-      <a href="#" @click.prevent="handleNavToggle">
-        <svgicon name="close" width="23" height="18"></svgicon>
-      </a>
-    </div>
+    <navbar />
 
     <Block title textColumn>
-      <nav>
-        <!-- <li @click='applyDelayTransition'>
-          <nuxt-link class="header" to="/">Oceanblue Boats</nuxt-link>
-        </li> -->
-
-        <li @click='applyDelayTransition' v-for="link in navLinks">
-          <nuxt-link class="header" :to='link.link'>{{link.label}}</nuxt-link>
-        </li>
+      <nav >
+        <ul>
+          <nav-in-page-link
+            class="header"
+            @click='applyDelayTransition'
+            v-for="item in navLinks"
+            :key="item.label"
+            :label="item.label"
+            :link="item.link"
+            :currentPage="currentPage"
+          />
+        </ul>
       </nav>
     </Block>
 
@@ -35,13 +31,17 @@
 </template>
 
 <script>
+import Navbar from '~/layouts/mixins/navbar.vue'
 import Block from '~/components/block.vue'
+import NavInPageLink from '~/components/nav-in-page-link.vue'
 
 export default {
   name: 'mobile-nav',
 
   components: {
-    Block
+    Navbar,
+    Block,
+    NavInPageLink
   },
 
   data () {
@@ -100,12 +100,6 @@ export default {
 <style scoped>
 @import "../../assets/vars.css";
 
-.close {
-  position: fixed;
-  right: 1.1rem;
-  top: 1.4rem;
-}
-
 .mobile-nav {
   --transition-duration: 0.2s;
   --transition-delayed: 0.4s;
@@ -135,16 +129,5 @@ export default {
   transition:
     opacity var(--transition-duration) var(--transition-delayed),
     transform 0s var(--transition-delayed);
-}
-
-nav {
-}
-
-nav li {
-  list-style: none;
-}
-
-nav a {
-  display: block;
 }
 </style>
