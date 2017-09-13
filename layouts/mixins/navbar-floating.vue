@@ -24,7 +24,7 @@ export default {
     return {
       previousScrollPos: 0,
       windowIsScrolled: false,
-      isNavHidden: false
+      isNavHidden: true
     }
   },
 
