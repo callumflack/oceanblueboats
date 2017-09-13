@@ -250,7 +250,6 @@ textarea {
 }
 
 .Navbar {
-  --transition-duration: 0.2s;
   position: absolute;
   z-index: 10;
   top: 0;

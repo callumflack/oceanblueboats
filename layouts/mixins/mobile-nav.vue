@@ -101,7 +101,6 @@ export default {
 @import "../../assets/vars.css";
 
 .mobile-nav {
-  --transition-duration: 0.2s;
   --transition-delayed: 0.4s;
   background-color: #fff;
   bottom: 0;
