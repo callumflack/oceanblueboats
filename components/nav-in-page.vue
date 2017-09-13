@@ -5,11 +5,11 @@
 
       <ul class="Root">
         <nav-in-page-link
-          v-for="link in navLinks"
           class="smallheader"
-          :key="link.label"
-          :label="link.label"
-          :link="link.link"
+          v-for="item in navLinks"
+          :key="item.label"
+          :label="item.label"
+          :link="item.link"
           :currentPage="currentPage"
         />
       </ul>
@@ -62,11 +62,6 @@ export default {
 <style scoped>
 @import "../assets/vars.css";
 
-.Root ul {
-  display: inline-block;
-  padding-right: 1.5rem;
-}
-
 .Root li {
   line-height: 1.5;
 
@@ -74,7 +69,6 @@ export default {
     margin-top: var(--s2);
 
     @media (--sm-viewport) {
-      margin-top: var(--s1);
       margin-top: 0;
     }
   }
