@@ -1,16 +1,17 @@
 <template>
   <nav
-    :class="{
+    :class="['Navbar', {
       white: $store.state.currentPage === '/'
-    }"
+    }]"
   >
-    <div class="nav-body">
+    <div class="Navbar-body">
       <router-link class="smallheader" to="/">
         OCEANBLUE BOATS
       </router-link>
 
       <a href="#" @click.prevent="handleNavToggle">
-        <svgicon name="hamburger" width="23" height="18"></svgicon>
+        <svgicon name="close" width="23" height="18" v-if="isVisible"></svgicon>
+        <svgicon name="hamburger" width="23" height="18" v-else></svgicon>
       </a>
     </div>
   </nav>
@@ -23,6 +24,12 @@ import '~/static/icons'
 
 export default {
   name: 'navbar',
+
+  computed: {
+    isVisible: function () {
+      return this.$store.state.isMobileNavVisible
+    }
+  },
 
   methods: {
     handleNavToggle () {
@@ -37,26 +44,11 @@ export default {
 <style scoped>
 @import "../../assets/vars.css";
 
-nav {
-  --transition-duration: 0.2s;
-  position: absolute;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: transparent;
-  transform: translateY(0);
-  transition:
-    background-color var(--transition-duration),
-    opacity var(--transition-duration),
-    transform 0s 0s;
-}
-
-nav.white {
+.Navbar.white {
   color: white;
 }
 
-nav.fill {
+.Navbar.fill {
   background-color: var(--color-bg);
   border-bottom: 1px solid currentColor;
   /*box-shadow:
@@ -65,12 +57,12 @@ nav.fill {
   color: var(--color-brand);
 }
 
-nav.fill .nav-body {
+.Navbar.fill .Navbar-body {
   border-bottom-color: transparent;
-  /*padding-bottom: 0;*/
+  padding-bottom: 0;
 }
 
-nav.hidden {
+.Navbar.hidden {
   opacity: 0;
   transform: translateY(-100%);
   transition:
