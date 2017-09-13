@@ -35,6 +35,9 @@ module.exports = {
       }
     },
   },
+  plugins: [
+    '~/plugins/svg-icons'
+  ],
   css: [
     '~/assets/suit.css',
     '~/assets/base.css'
