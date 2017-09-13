@@ -12,7 +12,7 @@
     <hero-link :link="link">
       <Container>
         <div :class="['hero-body', { 'hero-body--half': half }]">
-          <div :class="['columns u-size5of6 u-size3of4', { reverse }]">
+          <div :class="['columns u-size5of6 u-sm-size7of12', { reverse }]">
             <h1 class="header">{{headline}}</h1>
             <h4 class="lede">{{subtext}}</h4>
           </div>
@@ -131,7 +131,8 @@ export default {
   transform: translateX(-3px);
 }
 
+.hero:nth-of-type(3) .columns,
 .hero:nth-of-type(4) .columns {
-  width: 50%;
+  @media (--lg-viewport) { width: 50% !important; }
 }
 </style>
