@@ -1,7 +1,7 @@
 ---
 title: The process
 subtitle: Precision fabrication with water-jet cutting technology means we're more than capable.
-heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1503353159/rod-long-204281_nbrsdv.jpg
+heroImage: /images/obb-process.jpg
 ---
 
 Using our Water Jet Cutting Service we can cut almost any material into virtually any shape and size.

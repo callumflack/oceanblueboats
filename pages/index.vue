@@ -10,7 +10,7 @@
 
       <hero
         headline="The history"
-        subtext="Established Cairns 2002. But it all started much earlier that that."
+        subtext="Established Cairns 2002. Started much earlier."
         backgroundImage="/images/obb-history.jpg"
         filterOpacity="0.8"
         link="/the-history"
@@ -26,7 +26,7 @@
 
       <hero
         headline="The process"
-        subtext="Precision fabrication with water-jet cutting technology."
+        subtext="Precision fabrication with water-jet cutting tech."
         backgroundImage="/images/obb-process.jpg"
         filterOpacity="0.8"
         link="/the-process"

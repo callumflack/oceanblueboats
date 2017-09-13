@@ -1,6 +1,6 @@
 ---
 title: The history
-subtitle: Established Cairns 2002. But it all started a long time before then.
+subtitle: Established Cairns 2002. Started much earlier.
 heroImage: /images/obb-history.jpg
 ---
 
