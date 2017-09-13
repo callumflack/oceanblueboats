@@ -52,18 +52,6 @@ nav {
     transform 0s 0s;
 }
 
-.nav-body {
-  align-items: flex-end;
-  border-bottom: 1px solid currentColor;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: var(--grid-gutter);
-  padding-bottom: var(--s2);
-  transition:
-    border-bottom-color var(--transition-duration);
-}
-
 nav.white {
   color: white;
 }
