@@ -8,7 +8,15 @@
       }
     ]"
   >
-    <a class="close">&#10005;</a>
+    <div class="nav-body">
+      <router-link class="smallheader" to="/">
+        OCEANBLUE BOATS
+      </router-link>
+
+      <a href="#" @click.prevent="handleNavToggle">
+        <svgicon name="close" width="23" height="18"></svgicon>
+      </a>
+    </div>
 
     <Block title textColumn>
       <nav>
