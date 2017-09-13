@@ -3,5 +3,5 @@ import * as svgicon from 'vue-svgicon'
 
 // Default tag name is 'svgicon'
 Vue.use(svgicon, {
-  tagName: 'icon'
+  tagName: 'svgicon'
 })

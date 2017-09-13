@@ -1,21 +1,13 @@
 <template>
   <div>
-    <mobile-nav :close="closeMobileNav" :hidden="isMobileNavHidden" />
-
-    <nav
-      :class="{
-        hidden: isNavHidden,
-        fill: windowIsScrolled,
-        white: $store.state.currentPage === '/'
-      }"
-    >
+    <nav>
       <div class="nav-body">
         <router-link class="smallheader" to="/">
           OCEANBLUE BOATS
         </router-link>
 
         <a href="#" @click.prevent="handleNavToggle">
-          <icon name="hamburger" width="23" height="18" color="#333333"></icon>
+          <svgicon name="hamburger" width="23" height="18" color="#333333"></svgicon>
         </a>
       </div>
     </nav>

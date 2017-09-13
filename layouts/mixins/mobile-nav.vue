@@ -36,11 +36,6 @@ export default {
     Block
   },
 
-  props: {
-    hidden: Boolean,
-    close: Function
-  },
-
   data () {
     return {
       navLinks: [
