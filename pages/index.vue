@@ -42,7 +42,7 @@
 
       <hero
         headline="The designs"
-        subtext="Start your dream boat here."
+        subtext="Your dream boat starts here."
         backgroundImage="https://res.cloudinary.com/pw-img-cdn/image/upload/v1503353103/RMP-main-img_iuuzym.jpg"
         filterOpacity="0.8"
         link="/the-designs"
