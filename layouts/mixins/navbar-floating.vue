@@ -38,12 +38,10 @@ export default {
 
   methods: {
     handleScroll (event) {
-      console.log('scroll:', window.scrollY)
       const scrollPos = window.scrollY
       const previousScrollPos = this.previousScrollPos
       this.previousScrollPos = scrollPos
       const scrolledDown = scrollPos > previousScrollPos
-      console.log(scrolledDown)
 
       this.isNavHidden = scrolledDown || scrollPos < 200
 
