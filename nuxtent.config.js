@@ -1,8 +1,9 @@
 module.exports = {
   content: {
+    page: '/_page',
     permalink: ':slug',
     isPost: false,
-    generate: ['get']
+    generate: ['get', 'getAll']
   },
 
   api: {

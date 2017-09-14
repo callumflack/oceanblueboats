@@ -33,7 +33,7 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    },
+    }
   },
   css: [
     '~/assets/suit.css',

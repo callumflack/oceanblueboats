@@ -6,11 +6,11 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "npm run build-suit && nuxt build",
+    "build": "NODE_ENV=production nuxt build",
     "build-suit": "suitcss assets/suit-index.css assets/suit.css build",
     "svg": "vsvg -s static/icons-src -t static/icons",
     "start": "nuxt start",
-    "generate": "nuxt generate",
+    "generate": "STATIC=true IS_STATIC=true nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint"
   },
