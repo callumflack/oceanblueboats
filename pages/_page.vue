@@ -3,7 +3,7 @@
     <div>
       <Block title textColumn>
         <h1 class="header">{{page.title}}</h1>
-        <h4 class="lede">{{page.subtitle}}</h4>
+        <h4 class="lede" v-html="page.subtitle" />
       </Block>
 
       <hero
