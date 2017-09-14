@@ -284,7 +284,19 @@ textarea {
 
 /* so we can adjust it within <p>s */
 .svg-icon {
+  color: inherit;
+  display: inline-block;
+  fill: none;
+  /*height: 16px;*/
   position: relative;
+  stroke: currentColor;
+  vertical-align: middle;
+  /*width: 16px;*/
+}
+
+.svg-fill {
+  fill: currentColor;
+  stroke: none;
 }
 
 hr {
@@ -322,4 +334,13 @@ hr {
   padding-bottom: var(--s2);
   transition:
     border-bottom-color var(--transition-duration);
+}
+
+/*
+ * Page lines
+ * --------------------
+ */
+
+.the-history {
+
 }

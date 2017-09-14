@@ -1,6 +1,6 @@
 ---
 title: The factory
-subtitle: Our hangar-sized workshop, where we build it for you.
+subtitle: Our hangar-sized workshop,<br>where we build it for you.
 heroImage: /images/obb-factory.jpg
 ---
 

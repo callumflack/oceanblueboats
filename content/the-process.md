@@ -1,6 +1,6 @@
 ---
 title: The process
-subtitle: Powerful, precision fabrication with waterjet cutting tech.
+subtitle: Powerful, precision fabrication<br>with waterjet cutting tech.
 heroImage: /images/obb-process.jpg
 ---
 

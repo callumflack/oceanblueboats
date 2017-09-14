@@ -1,6 +1,6 @@
 ---
 title: The designs
-subtitle: We're boat-lovers who build boats. With 23 years experience, your dream is in good hands.
+subtitle: Subtitle.
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1503353159/rod-long-204281_nbrsdv.jpg
 ---
 

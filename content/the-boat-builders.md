@@ -1,6 +1,6 @@
 ---
 title: The boat builders
-subtitle: We're boat-lovers who build boats. Your dream is in good hands.
+subtitle: We're boat-lovers who build boats.<br>Your dream is in good hands.
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1503353107/home-hero-160812-vince_vme87s.jpg
 ---
 
