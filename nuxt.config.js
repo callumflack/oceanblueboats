@@ -35,12 +35,15 @@ module.exports = {
       }
     },
   },
-  plugins: [
-    '~/plugins/svg-icons'
-  ],
   css: [
     '~/assets/suit.css',
     '~/assets/base.css'
+  ],
+  plugins: [
+    '~/plugins/svg-icons'
+  ],
+  modules: [
+    'nuxtent'
   ],
   router: {
     middleware: 'currentPage',
@@ -63,7 +66,14 @@ module.exports = {
       }, 400)
     }
   },
-  modules: [
-    'nuxtent'
-  ]
+  generate: {
+    routes: [
+      '/',
+      '/the-history',
+      '/the-factory',
+      '/the-process',
+      '/the-boat-builders',
+      '/the-designs'
+    ]
+  }
 }
