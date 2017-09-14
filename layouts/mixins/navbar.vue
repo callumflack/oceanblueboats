@@ -9,9 +9,8 @@
         OCEANBLUE BOATS
       </router-link>
 
-      <a href="#" @click.prevent="handleNavToggle">
-        <svgicon name="close" width="23" height="18" v-if="isVisible"></svgicon>
-        <svgicon name="hamburger" width="23" height="18" v-else></svgicon>
+      <a href="#" class="icon-placeholder" @click.prevent="handleNavToggle">
+
       </a>
     </div>
   </nav>
@@ -20,10 +19,16 @@
 
 
 <script>
+// https://github.com/craigh411/vue-star-rating/issues/17 fails:
+// import Svgicon from '~/static/icons'
 import '~/static/icons'
 
 export default {
   name: 'navbar',
+
+  props: {
+    currentPage: String
+  },
 
   computed: {
     isVisible: function () {
@@ -43,6 +48,12 @@ export default {
 
 <style scoped>
 @import "../../assets/vars.css";
+
+.icon-placeholder {
+  background-color: black;
+  height: 18px;
+  width: 23px;
+}
 
 .Navbar.white {
   color: white;
