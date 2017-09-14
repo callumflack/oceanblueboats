@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :class="currentPage.substring(currentPage.lastIndexOf('/') + 1)">
     <navbar />
     <navbar-floating />
     <mobile-nav />
@@ -23,6 +23,12 @@ export default {
     NavbarFloating,
     MobileNav,
     VFooter
+  },
+
+  computed: {
+    currentPage: function () {
+      return this.$store.state.currentPage
+    }
   }
 }
 </script>
