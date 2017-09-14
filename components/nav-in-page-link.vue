@@ -33,8 +33,13 @@ export default {
 <style scoped>
 @import "../assets/vars.css";
 
-.header .Root      { transform: translateX(-0.55em); }
-.smallheader .Root { transform: translateX(-0.75em); }
+.header .Root {
+  transform: translateX(-0.55em);
+}
+
+.smallheader .Root {
+  transform: translateX(-0.75em);
+}
 
 .Root {
   --duration: 0.25s;

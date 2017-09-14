@@ -18,8 +18,8 @@
 
             <div class='Grid-cell u-sm-size5of12 space'>
               <ul>
-                <li><a href="https://www.facebook.com/oceanblueliving">Find us on Facebook</a></li>
-                <li><a href="https://www.instagram.com/oceanblueliving">Gram us on Instagram</a></li>
+                <li><a href="https://www.facebook.com/oceanblueboats">Find us on Facebook</a></li>
+                <li><a href="https://www.instagram.com/oceanblueboats">Gram us on Instagram</a></li>
               </ul>
             </div>
 
