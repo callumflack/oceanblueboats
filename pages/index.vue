@@ -10,7 +10,7 @@
 
       <hero
         headline="The history"
-        subtext="Established Cairns 2003. Started much earlier."
+        subtext="Established Cairns, 2003. Started, much earlier."
         backgroundImage="/images/obb-history.jpg"
         filterOpacity="0.8"
         link="/the-history"
@@ -18,7 +18,7 @@
 
       <hero
         headline="The factory"
-        subtext="Vince's hanger-sized dream shed. Big and capable."
+        subtext="Our hangar-sized workshop. Where we build it."
         backgroundImage="/images/obb-factory.jpg"
         filterOpacity="0.3"
         link="/the-factory"
@@ -35,7 +35,7 @@
       <hero
         headline="The boat builders"
         subtext="Boat-lovers, from hair to toes."
-        backgroundImage="/images/obb-team.jpg"
+        backgroundImage="/images/obb-team2.jpg"
         filterOpacity="0.6"
         link="/the-boat-builders"
       />

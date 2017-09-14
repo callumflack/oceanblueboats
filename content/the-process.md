@@ -12,8 +12,6 @@ It's versatile. From stainless steel to glass, marble, rubber, plastic and wood 
 
 And it's accurate, with finished parts to 0.05mm (.002”) tolerances, with none of the damage, warping or mess caused by hot cutting.
 
-Waterjet is clean, producing no smoke or toxic gases because there is no burning process.
-
-And it's fast, with rapid set up times, no extra tooling & reduced need for secondary operations due to its accuracy and quality of the cut edge.
+Waterjet is clean, producing no smoke or toxic gases because there is no burning process. And it's fast, with rapid set up times, no extra tooling & reduced need for secondary operations due to its accuracy and quality of the cut edge.
 
 Waterjet cutting isn't just for building boats. When you need cutting done right, talk to us. 

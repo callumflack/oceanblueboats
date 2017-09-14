@@ -1,13 +1,9 @@
 ---
 title: The history
-subtitle: Established Cairns 2003. Started much earlier.
+subtitle: Established Cairns, 2003. But it all started much earlier.
 heroImage: /images/obb-history.jpg
 ---
 
-Using our Water Jet Cutting Service we can cut almost any material into virtually any shape and size.
+I was always out fishing with Dad. I loved it. You couldn't get me back home for dinner, it was easier and much more fun to cook the catch on the beach. There was nothing like taking off in our little tinnie to go exploring. Then we'd start pestering Dad about going up a notch, getting a better boat. Learn to fix this one first he'd say. Take care of it, do it up right, if you can learn how to get that bit to sit comfy there, then… then you'll know what you really want when you've got some money together. Yeah, all that. And I guess you can say that's why I build boats now. 
 
-Water Jet cutting is versatile and able to cut a variety of materials from 6" thick Stainless Steel to Glass, Marble, Rubber, Plastic and Wood to name a few.
-
-Cut accurately with none of the damage or mess caused by hot cutting.
-
-We can cut to size any two dimensional shape using a simple CAD or DXF file.
+_— Vince Cassiniti, boat builder_
