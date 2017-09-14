@@ -40,7 +40,7 @@ module.exports = {
     '~/assets/base.css'
   ],
   plugins: [
-    '~/plugins/svg-icons'
+    { src: '~/plugins/svg-icons', ssr: false }
   ],
   modules: [
     'nuxtent'

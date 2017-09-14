@@ -9,8 +9,9 @@
         OCEANBLUE BOATS
       </router-link>
 
-      <a href="#" class="icon-placeholder" @click.prevent="handleNavToggle">
-
+      <a href="#" @click.prevent="handleNavToggle">
+        <svgicon name="close" width="23" height="18" v-if="isVisible"></svgicon>
+        <svgicon name="hamburger" width="23" height="18" v-else></svgicon>
       </a>
     </div>
   </nav>
@@ -20,6 +21,7 @@
 
 <script>
 // https://github.com/craigh411/vue-star-rating/issues/17 fails:
+// svgicon does not support SSR
 // import Svgicon from '~/static/icons'
 import '~/static/icons'
 
@@ -48,12 +50,6 @@ export default {
 
 <style scoped>
 @import "../../assets/vars.css";
-
-.icon-placeholder {
-  background-color: black;
-  height: 18px;
-  width: 23px;
-}
 
 .Navbar.white {
   color: white;
