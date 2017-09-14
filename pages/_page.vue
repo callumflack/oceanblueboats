@@ -12,7 +12,7 @@
     </div>
 
     <Block>
-      <div class="u-size5of6 u-sm-size3of4" v-html="page.body" />
+      <div class="u-size5of6 u-sm-size3of4 text" v-html="page.body" />
     </Block>
 
     <Block>
@@ -44,4 +44,7 @@ export default {
 </script>
 
 <style scoped>
+@import "../assets/vars.css";
+
+
 </style>

@@ -29,6 +29,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: var(--font-text-italic);
+  src: url("/fonts/equity-italic-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
 html {
 }
 
@@ -165,30 +172,57 @@ a {
 
 .button-fill {
   background-color: var(--color-brand);
-  color: #fff;
-  padding: 0.85rem 1.5rem;
   border-radius: 4px;
+  color: #fff;
+  /*line-height: 2;*/
+  padding: 13px 1.5rem 17px;
 }
 
 
 /*
- * Misc Defaults
+ * Markdown scope
  * --------------------
  */
 
-.icon {
-  margin-left: 0.2rem;
+.text a {
+  /*background-image: linear-gradient(to bottom, rgba(var(--color-text),0) 50%,  rgba(var(--color-text),0.4) 50%);*/
+  /*background-image: linear-gradient(to bottom, rgba(51,51,51,0) 50%,  rgba(51,51,51,0.4) 50%);*/
+  /*background-color: color(rgba(11, 48, 89, 0.1) saturation(+ 10%));*/
+  background-color: rgba(135,218,244,0.5);
+  background-repeat: repeat-x;
+  background-size: 1px 2px;
+  background-position: 0 100%;
+  padding-bottom: 0;
+  text-decoration: none;
+
+  &:hover {
+    /*text-decoration: underline;*/
+  }
 }
 
-hr {
-  border: 0;
-  border-bottom: 1px solid var(--color-brand);
-  margin: 0;
-  margin-bottom: var(--s2a);
+.text ul {
+  list-style: disc;
+  margin: var(--s4) 0;
+  padding-left: 1em;
+}
 
-  @media (--sm-viewport) {
-    margin-bottom: 20px;
-  }
+.text ul + p {
+  margin-top: var(--s4);
+}
+
+.text blockquote {
+  margin: var(--s4) 0;
+}
+
+.text p em,
+.text blockquote p {
+  font-family: var(--font-text-italic);
+}
+
+.text blockquote p {
+  border-left: 1px solid var(--color-brand);
+  padding-left: var(--s4);
+  /*opacity: 0.7;*/
 }
 
 
@@ -235,7 +269,7 @@ textarea {
 }
 
 .form-group {
-  margin-bottom: 2rem;
+  margin-bottom: var(--s4);
 }
 
 
@@ -244,9 +278,24 @@ textarea {
  * --------------------
  */
 
+.icon {
+  margin-left: 0.2rem;
+}
+
 /* so we can adjust it within <p>s */
 .svg-icon {
   position: relative;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px solid var(--color-brand);
+  margin: 0;
+  margin-bottom: var(--s2a);
+
+  @media (--sm-viewport) {
+    margin-bottom: 20px;
+  }
 }
 
 .Navbar {
