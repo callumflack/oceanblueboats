@@ -10,8 +10,12 @@
       </router-link>
 
       <a href="#" @click.prevent="handleNavToggle">
-        <svgicon name="close" width="23" height="18" v-if="isVisible"></svgicon>
-        <svgicon name="hamburger" width="23" height="18" v-else></svgicon>
+        <svg version="1.1" viewBox="0 0 23 18" class="svg-icon svg-fill" width="23" height="18" v-if="isVisible">
+          <g data-name="Layer 1"><path pid="0" d="M2.655 1.577L4.07.162l16.267 16.26-1.414 1.415z"></path><path pid="1" d="M2.656 16.428L18.922.168l1.414 1.414L4.07 17.842z"></path></g>
+        </svg>
+        <svg version="1.1" viewBox="0 0 23 18" class="svg-icon svg-fill" width="23" height="18" v-else>
+          <g data-name="Layer 1"><path pid="0" d="M0 0h23v2H0zM0 8h23v2H0zM0 16h23v2H0z"></path></g>
+        </svg>
       </a>
     </div>
   </nav>
@@ -20,10 +24,8 @@
 
 
 <script>
-// https://github.com/craigh411/vue-star-rating/issues/17 fails:
 // svgicon does not support SSR
-// import Svgicon from '~/static/icons'
-import '~/static/icons'
+// import '~/static/icons'
 
 export default {
   name: 'navbar',
