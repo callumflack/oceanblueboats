@@ -44,6 +44,10 @@ export default {
     NavInPageLink
   },
 
+  props: {
+    currentPage: String
+  },
+
   data () {
     return {
       navLinks: [
