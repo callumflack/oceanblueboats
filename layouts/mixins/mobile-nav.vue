@@ -44,10 +44,6 @@ export default {
     NavInPageLink
   },
 
-  props: {
-    currentPage: String
-  },
-
   data () {
     return {
       navLinks: [
@@ -78,6 +74,10 @@ export default {
   computed: {
     isVisible: function () {
       return this.$store.state.isMobileNavVisible
+    },
+
+    currentPage: function () {
+      return this.$store.state.currentPage
     }
   },
 

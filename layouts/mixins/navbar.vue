@@ -1,7 +1,7 @@
 <template>
   <nav
     :class="['Navbar', {
-      white: $store.state.currentPage === '/'
+      white: currentPage === '/'
     }]"
   >
     <div class="Navbar-body">
@@ -26,13 +26,13 @@ import '~/static/icons'
 export default {
   name: 'navbar',
 
-  props: {
-    currentPage: String
-  },
-
   computed: {
     isVisible: function () {
       return this.$store.state.isMobileNavVisible
+    },
+
+    currentPage: function () {
+      return this.$store.state.currentPage
     }
   },
 
