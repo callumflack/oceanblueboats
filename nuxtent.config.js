@@ -1,3 +1,5 @@
+const config = require('./config/config.js');
+
 module.exports = {
   content: {
     page: '/_page',
@@ -8,7 +10,7 @@ module.exports = {
 
   api: {
     baseURL: process.env.NODE_ENV === 'production'
-      ? 'https://oceanblueboats.now.sh'
-      : 'http://localhost:3000'
+      ? config.productionUrl
+      : config.developmentUrl
   }
 }
