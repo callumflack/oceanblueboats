@@ -12,16 +12,22 @@
     </div>
 
     <Block>
-      <div class="u-size5of6 u-sm-size3of4 text">
+      <div v-for='boat in boats' class="u-size5of6 u-sm-size3of4 text">
 
         <section class="text">
-          <img src="/images/4.55-01.jpg" alt="">
-          <h2 class="smallheader">4.55 OB Adv (open boat we did)</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <lightbox
+              :thumbnail="boat.thumbnail"
+              :images="boat.images"
+          ></lightbox>
+
+          <h2 class="smallheader">{{boat.title}}</h2>
+          <p>{{boat.subtext}}</p>
         </section>
 
       </div>
     </Block>
+
+
 
     <Block>
       <nav-in-page />
@@ -38,11 +44,28 @@ import Hero from '~/components/hero.vue'
 import Container from '~/components/container.vue'
 import Block from '~/components/block.vue'
 
+const boats = [
+  {
+    thumbnail: '/images/4.55-01.jpg',
+    images: [
+      '/images/4.55-01.jpg'
+    ],
+    title: '4.55 OB Adv (open boat we did)',
+    subtext: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+  }
+]
+
 export default {
   components: {
     Hero,
     Container,
     Block
+  },
+
+  data () {
+    return {
+      boats
+    }
   }
 }
 </script>

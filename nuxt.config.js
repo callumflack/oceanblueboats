@@ -40,7 +40,7 @@ module.exports = {
     '~/assets/base.css'
   ],
   plugins: [
-    { src: '~/plugins/svg-icons', ssr: false }
+    { src: '~/plugins/vue-pure-lightbox', ssr: false }
   ],
   modules: [
     'nuxtent'
