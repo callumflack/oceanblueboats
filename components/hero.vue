@@ -140,4 +140,10 @@ export default {
 .hero:nth-of-type(4) .columns {
   @media (--lg-viewport) { width: 50% !important; }
 }
+
+.hero:nth-of-type(6) {
+  background-position: 75%;
+
+  @media (--lg-viewport) { }
+}
 </style>

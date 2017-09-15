@@ -42,9 +42,9 @@
 
       <hero
         headline="The designs"
-        subtext="Your dream boat starts here."
-        backgroundImage="https://res.cloudinary.com/pw-img-cdn/image/upload/v1503353103/RMP-main-img_iuuzym.jpg"
-        filterOpacity="0.8"
+        subtext="Your custom plate boat starts here."
+        backgroundImage="/images/obb-designs.jpg"
+        filterOpacity="0.7"
         link="/the-designs"
       />
     </div>

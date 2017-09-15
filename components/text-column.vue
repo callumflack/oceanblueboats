@@ -1,5 +1,5 @@
 <template>
-  <div class="u-sm-3of4">
+  <div class="u-sm-size3of4">
     <slot />
   </div>
 </template>

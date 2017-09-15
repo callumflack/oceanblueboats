@@ -225,6 +225,11 @@ a {
   /*opacity: 0.7;*/
 }
 
+.text img {
+  border: 1px solid var(--color-border);
+  margin: var(--s3) 0;
+}
+
 
 /*
  * Forms
@@ -334,6 +339,26 @@ hr {
   padding-bottom: var(--s2);
   transition:
     border-bottom-color var(--transition-duration);
+}
+
+.go-top {
+  --transition-debounce: 2.5s;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: calc(1.5 * var(--grid-gutter));
+  transform: translateY(0);
+  transition:
+    opacity var(--transition-duration) var(--transition-debounce),
+    transform 0s var(--transition-debounce);
+}
+
+.go-top.hidden {
+  opacity: 0;
+  transform: translateY(100vh);
+  transition:
+    opacity var(--transition-duration),
+    transform 0s var(--transition-duration);
 }
 
 /*

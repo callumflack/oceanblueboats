@@ -1,5 +1,5 @@
 <template>
-  <div class="u-size3of4">
+  <div class="u-sm-size3of4">
     <div class="header">Let's Talk</div>
     <div class="lede">Got ideas? Write to us:</div>
 
