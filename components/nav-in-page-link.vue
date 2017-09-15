@@ -48,7 +48,7 @@ export default {
   /*transform: translateX(-0.75em);*/
   transition: all var(--duration) ease-in-out;
 
-  & span {
+  & /deep/ span {
     opacity: 0;
     transition: opacity var(--duration) ease-in-out;
   }
@@ -58,7 +58,7 @@ export default {
   transform: translateX(0);
   transition: all var(--duration) ease-in-out;
 
-  & span {
+  & /deep/ span {
     opacity: 1;
     transition: opacity var(--duration) ease-in-out;
   }
