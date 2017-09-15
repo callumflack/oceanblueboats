@@ -65,6 +65,9 @@ export default {
         }, {
           label: 'The designs',
           link: '/the-designs'
+        }, {
+          label: 'Contact us',
+          link: '/contact-us'
         }
       ],
       delayTransition: false

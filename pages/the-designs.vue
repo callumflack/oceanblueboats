@@ -72,6 +72,7 @@ const boats = [
 ]
 
 export default {
+  name: 'the-designs',
   components: {
     Hero,
     Container,
