@@ -149,6 +149,12 @@ p + p {
   margin-top: var(--s4);
 }
 
+.contact-marker {
+  display: inline-block;
+  font-family: var(--font-subheader);
+  width: 1.5em;
+}
+
 
 /*
  * Links + Buttons
@@ -190,10 +196,7 @@ button:disabled {
   opacity: 0.5;
 }
 
-.text .button {
-  background-color: transparent;
-  padding: 13px 1.5rem 17px;
-}
+
 
 .small.button {
   padding: 8px 1rem 12px;
@@ -202,6 +205,7 @@ button:disabled {
 
 /*
  * Markdown scope
+ * TODO: This should be a comp so we can scope it better.
  * --------------------
  */
 
@@ -221,7 +225,7 @@ button:disabled {
   /*background-image: linear-gradient(to bottom, rgba(var(--color-text),0) 50%,  rgba(var(--color-text),0.4) 50%);*/
   /*background-image: linear-gradient(to bottom, rgba(51,51,51,0) 50%,  rgba(51,51,51,0.4) 50%);*/
   /*background-color: color(rgba(11, 48, 89, 0.1) saturation(+ 10%));*/
-  background-color: rgba(135,218,244,0.5);
+  background-color: rgba(135,244,180,0.5);
   background-repeat: repeat-x;
   background-size: 1px 2px;
   background-position: 0 100%;
@@ -281,7 +285,14 @@ button:disabled {
 }
 
 .text .button {
+  background-color: transparent;
+  padding: 13px 1.5rem 17px;
+}
 
+.text .button-fill {
+  background-color: var(--color-brand);
+  border-color: var(--color-brand);
+  color: white;
 }
 
 
@@ -459,7 +470,7 @@ hr {
 
   & .lightbox__thumbnail:after {
     align-items: center;
-    background-color: rgba(135,218,244,0.7);
+    background-color: rgba(135,244,180,0.7);
     bottom: 0;
     color: var(--color-brand);
     content: "View more";

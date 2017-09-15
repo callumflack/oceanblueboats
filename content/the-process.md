@@ -1,7 +1,7 @@
 ---
 title: The process
 subtitle: Powerful, precision fabrication<br>with waterjet cutting tech.
-heroImage: /images/obb-process.jpg
+heroImage: http://res.cloudinary.com/pw-img-cdn/image/upload/v1505458854/obb-process_wmg0oz.jpg
 ---
 
 We can cut almost any material into virtually shape and size with our waterjet cutter: a tool that cuts with very high-pressure jets of water.

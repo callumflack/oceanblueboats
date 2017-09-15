@@ -1,7 +1,7 @@
 ---
 title: The factory
 subtitle: Our hangar-sized workshop,<br>where we build it for you.
-heroImage: /images/obb-factory.jpg
+heroImage: http://res.cloudinary.com/pw-img-cdn/image/upload/v1505458695/obb-factory_mpiq6q.jpg
 ---
 
 They say every man needs a shed. Even if that's not quite true, we're proud of our fully-equipped, hangar-sized workshop.

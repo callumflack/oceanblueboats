@@ -10,7 +10,7 @@
   >
     <navbar />
 
-    <Block title textColumn>
+    <Block nav textColumn>
       <nav >
         <ul>
           <nav-in-page-link
@@ -24,6 +24,15 @@
           />
         </ul>
       </nav>
+    </Block>
+
+    <Block rule textColumn>
+      <ul>
+        <li><a href="tel:0409 726 128"><span class="contact-marker">t: </span>0409 726 128</a></li>
+        <li><a href="mailto:hi@oceanblueboats.com.au"><span class="contact-marker">e: </span>hi@oceanblueboats.com.au</a></li>
+        <li><a href="https://goo.gl/maps/7TPnDqKrtby">116 Lyons Street, Cairns</a></li>
+        <li><a href="https://goo.gl/maps/7TPnDqKrtby">Queensland 4870 Australia</a></li>
+      </ul>
     </Block>
 
 

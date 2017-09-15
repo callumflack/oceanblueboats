@@ -1,8 +1,8 @@
 <template>
   <form action="http://formspree.io/hi@oceanblueboats.com.au" method="post" @submit.prevent="handleSubmit">
     <div class="form-group">
-      <input placeholder="Your name*" name="name" v-model="name">
-      <input placeholder="Your email*" type="email" name="email" v-model="email">
+      <input placeholder="Your name*" name="name" v-model="name" required>
+      <input placeholder="Your email*" type="email" name="email" v-model="email" required>
       <textarea rows="4" placeholder="How can we help make your dream boat?" name="message" v-model="message"/>
 
       <div class="u-textRight">
@@ -38,7 +38,7 @@ export default {
         return 'Sent'
       }
 
-      return 'Send'
+      return 'Send ›'
     }
   },
 

@@ -34,7 +34,8 @@
   --color-brand: #0b3059;
   --color-text: #333;
   --color-text-lite: #808080;
-  --color-highlight: rgb(135,218,244);
+  /*--color-highlight: rgb(135,218,244);*/
+  --color-highlight: rgb(135,244,180);
   --color-border: #ddd;
   --color-grey: #F2F2F2;
   --color-bg: #fefefe;

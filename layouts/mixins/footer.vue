@@ -11,8 +11,8 @@
           <div class="Grid Grid--withGutter">
             <div class='Grid-cell u-sm-size5of12 space'>
               <ul>
-                <li><a href="tel:0409 726 128"><span>t: </span>0409 726 128</a></li>
-                <li><a href="mailto:hi@oceanblueboats.com.au"><span>e: </span>hi@oceanblueboats.com.au</a></li>
+                <li><a href="tel:0409 726 128"><span class="contact-marker">t: </span>0409 726 128</a></li>
+                <li><a href="mailto:hi@oceanblueboats.com.au"><span class="contact-marker">e: </span>hi@oceanblueboats.com.au</a></li>
               </ul>
             </div>
 
@@ -70,12 +70,6 @@ export default {
 
   @media (--sm-viewport) {
     margin-top: var(--s2a);
-  }
-
-  & span {
-    display: inline-block;
-    font-family: var(--font-subheader);
-    width: 1.5em;
   }
 }
 </style>

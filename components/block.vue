@@ -2,6 +2,8 @@
   <div
     :class="['Block', {
       'as-title': title,
+      'as-nav': nav,
+      'with-rule': rule,
       'with-bottom': footer,
       'with-bottom': bottom
     }]">
@@ -35,6 +37,8 @@ export default {
   },
   props: {
     title: Boolean,
+    nav: Boolean,
+    rule: Boolean,
     textColumn: Boolean,
     footer: Boolean,
     bottom: Boolean
@@ -55,6 +59,11 @@ export default {
     padding-top: var(--block);
   }
 
+  &.with-rule {
+    border-top: 1px solid currentColor;
+    /*padding-bottom: var(--block);*/
+  }
+
   &.with-bottom {
     padding-bottom: var(--block);
   }
@@ -66,6 +75,14 @@ export default {
     @media (--lg-viewport) {
       padding-top: var(--blockPlusNav);
       padding-bottom: calc(0.9 * var(--blockPlusNav));
+    }
+  }
+
+  &.as-nav {
+    padding-top: calc(0.75 * var(--blockPlusNav));
+
+    @media (--lg-viewport) {
+      padding-top: var(--blockPlusNav);
     }
   }
 }

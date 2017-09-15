@@ -5,13 +5,13 @@
         headline="Far-away places"
         subtext="Custom plate boats made for"
         reverse
-        backgroundImage="/images/obb-hero.jpg"
+        backgroundImage="http://res.cloudinary.com/pw-img-cdn/image/upload/v1505458695/obb-hero_gy13vl.jpg"
       />
 
       <hero
         headline="The history"
         subtext="Established Cairns, 2003.<br>Started, much earlier."
-        backgroundImage="/images/obb-history.jpg"
+        backgroundImage="http://res.cloudinary.com/pw-img-cdn/image/upload/v1505109978/obb-history_yglgqt.jpg"
         filterOpacity="0.8"
         link="/the-history"
       />
@@ -19,7 +19,7 @@
       <hero
         headline="The factory"
         subtext="Our hangar-sized workshop. Where we build it."
-        backgroundImage="/images/obb-factory.jpg"
+        backgroundImage="http://res.cloudinary.com/pw-img-cdn/image/upload/v1505458695/obb-factory_mpiq6q.jpg"
         filterOpacity="0.3"
         link="/the-factory"
       />
@@ -27,7 +27,7 @@
       <hero
         headline="The process"
         subtext="Precision fabrication with water-jet cutting tech."
-        backgroundImage="/images/obb-process.jpg"
+        backgroundImage="http://res.cloudinary.com/pw-img-cdn/image/upload/v1505458854/obb-process_wmg0oz.jpg"
         filterOpacity="0.8"
         link="/the-process"
       />
@@ -35,7 +35,7 @@
       <hero
         headline="The boat builders"
         subtext="Boat-lovers, from hair to toes."
-        backgroundImage="/images/obb-team2.jpg"
+        backgroundImage="http://res.cloudinary.com/pw-img-cdn/image/upload/v1505458859/obb-team2_uoziti.jpg"
         filterOpacity="0.6"
         link="/the-boat-builders"
       />
@@ -43,7 +43,7 @@
       <hero
         headline="The designs"
         subtext="Your custom plate boat starts here."
-        backgroundImage="/images/obb-designs.jpg"
+        backgroundImage="http://res.cloudinary.com/pw-img-cdn/image/upload/v1505458697/obb-designs_fxdqhh.jpg"
         filterOpacity="0.7"
         link="/the-designs"
       />
