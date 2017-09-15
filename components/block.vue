@@ -10,7 +10,7 @@
     </template>
     <template v-else-if="textColumn">
       <container>
-        <div class="u-size5of6 u-sm-size3of4">
+        <div class="u-size11of12 u-sm-size3of4">
           <slot />
         </div>
       </container>

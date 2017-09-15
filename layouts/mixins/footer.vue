@@ -24,7 +24,7 @@
             </div>
 
             <div class='Grid-cell u-sm-size5of12 space'>
-              <a href="https://goo.gl/maps/6DvEDu1kzDm">
+              <a href="https://goo.gl/maps/7TPnDqKrtby">
                 <ul>
                   <li>Open Mon-Fri, 9am-3.30pm</li>
                   <li>116 Lyons Street, Cairns</li>

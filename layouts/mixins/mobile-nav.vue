@@ -66,7 +66,7 @@ export default {
           label: 'The designs',
           link: '/the-designs'
         }, {
-          label: 'Contact us',
+          label: 'The location',
           link: '/contact-us'
         }
       ],

@@ -44,6 +44,9 @@ export default {
         }, {
           label: 'The designs',
           link: '/the-designs'
+        }, {
+          label: 'The location',
+          link: '/contact-us'
         }
       ]
     }

@@ -1,7 +1,7 @@
 <template>
   <li class="u-posRelative">
     <nuxt-link :class="currentPage" :to='link'>
-      <span class="icon">></span>
+      <span class="marker">›</span>
       {{label}}
     </nuxt-link>
   </li>
@@ -32,6 +32,14 @@ export default {
 
 <style scoped>
 @import "../assets/vars.css";
+
+.marker {
+  display: inline-block;
+  font-family: var(--font-text);
+  font-size: 70%;
+  transform: translateY(-20px);
+  transform: translateY(-0.333em);
+}
 
 .header .Root {
   transform: translateX(-0.55em);

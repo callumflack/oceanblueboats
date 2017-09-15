@@ -50,7 +50,11 @@
     </div>
 
     <Block>
-      <form-contact />
+      <div class="u-size11of12 u-sm-size3of4">
+        <div class="header">Let's Talk</div>
+        <div class="lede">Got ideas? Write to us:</div>
+        <form-contact />
+      </div>
     </Block>
 
     <a

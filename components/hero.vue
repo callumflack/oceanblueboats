@@ -15,7 +15,7 @@
     <hero-link :link="link">
       <Container>
         <div :class="['hero-body', { 'hero-body--half': half }]">
-          <div :class="['columns u-size5of6 u-sm-size7of12', { reverse }]">
+          <div :class="['columns u-size11of12 u-sm-size7of12', { reverse }]">
             <h1 class="header">{{headline}}</h1>
             <h4 class="lede" v-html="subtext" />
           </div>

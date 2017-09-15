@@ -2,25 +2,26 @@
   <main>
     <div>
       <Block title textColumn>
-        <h1 class="header">Contact us</h1>
-        <h4 class="lede">Lede here.</h4>
+        <h1 class="header">The location</h1>
+        <h4 class="lede">Drop by and see for yourself.</h4>
       </Block>
-
-      <!-- <hero
-        :backgroundImage="/images/obb-designs.jpg"
-      /> -->
     </div>
 
-    <Block>
-      <div class="u-size5of6 u-sm-size3of4 text">
-        Contact us
+    <Container>
+      <div class="u-size11of12 u-sm-size3of4 text">
+        <p>We love listening to what our customers want. Please drop by during business hours for a chat. We're open Monday through Friday, from 9am til 3.30pm, at <a href="https://goo.gl/maps/7TPnDqKrtby">The Factory, 116 Lyons Street, Cairns.</a></p>
 
+        <figure>
+          <a href="https://goo.gl/maps/7TPnDqKrtby">
+            <img src="/images/obb-map.jpg" alt="map">
+          </a>
+        </figure>
+
+
+        <p>Got ideas? Write to us:</p>
+        <form-contact />
       </div>
-    </Block>
-
-    <Block>
-      <form-contact />
-    </Block>
+    </Container>
 
     <Block>
       <nav-in-page />
@@ -34,6 +35,7 @@ import Hero from '~/components/hero.vue'
 import Container from '~/components/container.vue'
 import Block from '~/components/block.vue'
 import FormContact from '~/components/form-contact.vue'
+import NavInPage from '~/components/nav-in-page.vue'
 
 export default {
   name: 'contact-us',
@@ -41,7 +43,8 @@ export default {
     Hero,
     Container,
     Block,
-    FormContact
+    FormContact,
+    NavInPage
   }
 }
 </script>
