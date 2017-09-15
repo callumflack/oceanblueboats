@@ -107,7 +107,6 @@ export default {
 @import "../assets/vars.css";
 
 .go-top {
-  --transition-debounce: 2.5s;
   position: fixed;
   right: 0;
   bottom: 0;

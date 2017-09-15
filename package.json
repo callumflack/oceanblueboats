@@ -20,7 +20,7 @@
     "nuxtent": "^0.2.78",
     "suitcss": "3.0.0",
     "suitcss-preprocessor": "4.0.0",
-    "vue-pure-lightbox": "2.1.4",
+    "vue-pure-lightbox": "^2.1.4",
     "vue-svgicon": "1.2.6"
   },
   "devDependencies": {

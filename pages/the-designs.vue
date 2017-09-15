@@ -14,6 +14,17 @@
     <Block>
       <div v-for='boat in boats' class="u-size5of6 u-sm-size3of4 text">
 
+        <!-- <lightbox
+          thumbnail="/images/obb-boats-1.jpg"
+          :images="[
+            '/images/obb-boats-1.jpg',
+            '/images/obb-boats-2.jpg',
+            '/images/obb-boats-3.jpg'
+          ]"
+        >
+
+        </lightbox> -->
+
         <section class="text">
           <lightbox
               :thumbnail="boat.thumbnail"
@@ -23,6 +34,8 @@
           <h2 class="smallheader">{{boat.title}}</h2>
           <p>{{boat.subtext}}</p>
         </section>
+
+
 
       </div>
     </Block>
@@ -43,6 +56,9 @@
 import Hero from '~/components/hero.vue'
 import Container from '~/components/container.vue'
 import Block from '~/components/block.vue'
+// import Lightbox from 'vue-pure-lightbox'
+
+// Vue.use(Lightbox)
 
 const boats = [
   {
