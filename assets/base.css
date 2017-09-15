@@ -400,6 +400,14 @@ hr {
   padding-bottom: var(--s2);
   transition:
     border-bottom-color var(--transition-duration);
+
+  & svg {
+    transform: translateY(-3px);
+
+    @media (--md-viewport) {
+      transform: translateY(0);
+    }
+  }
 }
 
 /*

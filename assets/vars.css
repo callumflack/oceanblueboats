@@ -88,5 +88,6 @@
   --line-height-subheader: 1.25;
 
   --transition-duration: 0.2s;
+  --transition-delayed: 0.4s;
   --transition-debounce: 2.5s;
 }

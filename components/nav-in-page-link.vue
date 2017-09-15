@@ -42,11 +42,11 @@ export default {
 }
 
 .header .Root {
-  transform: translateX(-0.55em);
+  transform: translateX(-0.525em);
 }
 
 .smallheader .Root {
-  transform: translateX(-0.75em);
+  transform: translateX(-0.55em);
 }
 
 .Root {
