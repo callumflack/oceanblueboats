@@ -178,6 +178,11 @@ a {
   padding: 13px 1.5rem 17px;
 }
 
+button:disabled {
+  cursor: initial;
+  opacity: 0.5;
+}
+
 
 /*
  * Markdown scope
@@ -368,4 +373,26 @@ hr {
 
 .the-history {
 
+}
+
+
+/*
+ * Vue transitions
+ * https://vuejs.org/v2/guide/transitions.html
+ * --------------------
+ */
+
+/* Fade */
+
+.fade-enter-active, .fade-leave-active {
+  transition-property: opacity;
+  transition-duration: .25s;
+}
+
+.fade-enter-active {
+  transition-delay: .25s;
+}
+
+.fade-enter, .fade-leave-active {
+  opacity: 0
 }
