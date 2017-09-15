@@ -73,7 +73,8 @@ module.exports = {
       '/the-factory',
       '/the-process',
       '/the-boat-builders',
-      '/the-designs'
+      '/the-designs',
+      '/contact-us'
     ]
   }
 }
