@@ -74,7 +74,9 @@ export default {
 </script>
 
 <style scoped>
+@import "../assets/vars.css";
+
 .confirmation-message {
-  margin-right: 1.8rem;
+  margin-right: var(--grid-gutter);
 }
 </style>

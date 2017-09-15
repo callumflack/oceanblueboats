@@ -292,13 +292,13 @@ textarea {
   margin-left: 0.2rem;
 }
 
-/* so we can adjust it within <p>s */
+/* 1. so we can adjust it within <p>s */
 .svg-icon {
   color: inherit;
   display: inline-block;
   fill: none;
   /*height: 16px;*/
-  position: relative;
+  position: relative; /*1*/
   stroke: currentColor;
   vertical-align: middle;
   /*width: 16px;*/
@@ -345,6 +345,11 @@ hr {
   transition:
     border-bottom-color var(--transition-duration);
 }
+
+/*
+ * Scroll back to the top
+ * ----------------------
+ */
 
 .go-top {
   --transition-debounce: 2.5s;

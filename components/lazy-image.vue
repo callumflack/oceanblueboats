@@ -87,8 +87,10 @@ export default {
 </script>
 
 <style scoped>
+@import "../assets/vars.css";
+
 .placeholder {
-  background-color: #f6f6f6;
+  background-color: var(--color-brand);
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
