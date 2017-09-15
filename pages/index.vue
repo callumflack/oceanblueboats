@@ -61,8 +61,6 @@
     >
       <span class="smallheader">&uarr; Top</span>
     </a>
-
-    <script src='/js/cloudinary.js'></script>
   </main>
 </template>
 

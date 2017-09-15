@@ -1,9 +1,12 @@
 <template>
   <section
     :class="['hero', { 'text-white': backgroundImage }]"
-    :style="{ backgroundImage: 'url(' + backgroundImage + ')' }"
   >
-    <!-- <img v-if="backgroundImage" class="hero-background-image" :data-bg="backgroundImage ? backgroundImage : ''" /> -->
+    <lazy-image
+      v-if="backgroundImage"
+      class="hero-background-image"
+      :src="backgroundImage"
+    />
 
     <div
       class='filter'
@@ -26,12 +29,14 @@
 <script>
 import Container from '~/components/container.vue'
 import HeroLink from '~/components/hero-link.vue'
+import LazyImage from '~/components/lazy-image.vue'
 
 export default {
   name: 'hero',
   components: {
     Container,
-    HeroLink
+    HeroLink,
+    LazyImage
   },
   computed: {
     filterStyle () {
@@ -70,8 +75,8 @@ export default {
   bottom: 0;
   left: 0;
   right: 0;
-  min-height: 100vh;
-  min-width: 100vw;
+  min-height: 100%;
+  min-width: 100%;
 }
 
 .hero.text-white {

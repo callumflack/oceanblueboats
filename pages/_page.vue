@@ -18,8 +18,6 @@
     <Block>
       <nav-in-page />
     </Block>
-
-    <script src='/js/cloudinary.js'></script>
   </div>
 </template>
 
