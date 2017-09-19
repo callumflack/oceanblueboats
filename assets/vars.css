@@ -10,9 +10,6 @@
 
   --grid-gutter: 24px;
 
-  --block-sm: 3rem;
-  --block-md: 3rem;
-  --block-rg: 5rem;
   --block: 10vh;
   --blockPlusNav: calc(var(--block) + 86px);
 
