@@ -47,6 +47,9 @@ module.exports = {
   modules: [
     'nuxtent'
   ],
+  axios: {
+    credentials: false
+  },
   router: {
     middleware: 'currentPage',
     async scrollBehavior (to, from, savedPosition) {
