@@ -118,9 +118,13 @@ export default {
 
 .second-nav {
   display: inline-block;
-  margin-top: var(--s3);
+  margin-top: var(--s2);
 
-  @media (--sm-viewport) {
+  @media (--md-viewport) {
+    margin-top: var(--s3);
+  }
+
+  @media (--lg-viewport) {
     margin-top: var(--s4);
   }
 }

@@ -84,7 +84,7 @@ export default {
 }
 
 .hero:not(:last-child) {
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 
   @media (--lg-viewport) {
     margin-bottom: 4px;
@@ -107,7 +107,7 @@ export default {
   justify-content: stretch;
   align-items: center;
   width: 100%;
-  height: 50vh;
+  height: 90vh;
 
   @media (--sm-viewport) {
     height: 70vh;
