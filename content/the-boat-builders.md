@@ -6,7 +6,7 @@ heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1503353107/home-h
 
 OceanBlue Boats is a family company that has been part of the boating industry since 2003. Founded by Vince and LeaAnne Cassaniti, we've evolved from a two-person workshop into a team of craftspeople with both design techniques and technical skillsets who have the knowhow and experience to bring your dream boat to life.
 
-We believe in building custom made aluminium boats built to the highest quality, we focus on every little detail throughout the building process, without taking shortcuts, to deliver the boat you've always wanted because, as Rat said: 
+We believe in building custom made aluminium boats to the highest quality. We focus on every little detail throughout the building process, without taking shortcuts, to deliver the boat you've always wanted. Why? Because, as Rat said: 
 
 > there’s nothing—absolutely nothing—half so much worth doing as messing about in boats.
 
