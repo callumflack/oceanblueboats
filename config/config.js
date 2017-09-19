@@ -1,4 +1,4 @@
 module.exports = {
-  productionUrl: 'https://oceanblueboats.now.sh',
+  productionUrl: 'https://oceanblueboats.com.au',
   developmentUrl: 'http://localhost:3000'
 }
