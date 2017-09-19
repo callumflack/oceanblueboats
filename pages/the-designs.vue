@@ -10,12 +10,14 @@
 
         <template v-for='boat in boats'>
           <section class="text">
-            <lightbox
-                :thumbnail="boat.thumbnail"
-                :images="boat.images"
-            >
-              <h2 class="smallheader u-textCenter">{{boat.title}}</h2>
-            </lightbox>
+            <no-ssr>
+              <lightbox
+                  :thumbnail="boat.thumbnail"
+                  :images="boat.images"
+              >
+                <h2 class="smallheader u-textCenter">{{boat.title}}</h2>
+              </lightbox>
+            </no-ssr>
 
             <h2 class="smallheader">{{boat.title}}</h2>
             <p>{{boat.subtext}}</p>
@@ -130,5 +132,4 @@ export default {
 
 <style scoped>
 @import "../assets/vars.css";
-
 </style>
