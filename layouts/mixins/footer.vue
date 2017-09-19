@@ -26,7 +26,7 @@
             <div class='Grid-cell u-sm-size5of12 space'>
               <a href="https://goo.gl/maps/7TPnDqKrtby">
                 <ul>
-                  <li>Open Mon-Fri, 9am-3.30pm</li>
+                  <li>Open Mon-Fri, 8am-3.30pm</li>
                   <li>116 Lyons Street, Cairns</li>
                   <li>Queensland 4870 Australia</li>
                 </ul>
