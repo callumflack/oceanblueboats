@@ -123,7 +123,7 @@ export default {
     return {
       title: 'The designs',
       meta: [
-        { hid: 'description', name: 'description', content: 'Design and customise your boat from our designs.' }
+        { hid: 'description', name: 'description', content: 'Customise your aluminium plate boat from our designs.' }
       ]
     }
   }
