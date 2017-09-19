@@ -1,7 +1,8 @@
 {
   "name": "oceanblueboats",
   "alias": [
-    "oceanblueboats.now.sh"
+    "oceanblueboats.com.au",
+    "www.oceanblueboats.com.au"
   ],
   "env": {
     "NODE_ENV": "production"
