@@ -1,7 +1,8 @@
 <template>
   <nav
     :class="['Navbar', {
-      white: currentPage === '/'
+      white: currentPage === '/',
+      brand: isVisible
     }]"
   >
     <div class="Navbar-body">
@@ -55,6 +56,10 @@ export default {
 
 .Navbar.white {
   color: white;
+}
+
+.Navbar.brand {
+  color: var(--color-brand);
 }
 
 .Navbar.fill {
