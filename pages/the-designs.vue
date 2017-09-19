@@ -115,6 +115,15 @@ export default {
     return {
       boats
     }
+  },
+
+  head () {
+    return {
+      title: 'The designs',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Design and customise your boat from our designs.' }
+      ]
+    }
   }
 }
 </script>

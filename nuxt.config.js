@@ -3,11 +3,13 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'ocean-blue-boats',
+    title: 'For far-away places',
+    titleTemplate: '%s | Oceanblue Boats, Cairns',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Nuxt.js project' }
+      { name: 'google-site-verification', content: 'PAZ08G7lraH_fgi9VL18z9BXxutB1DGu20JapK90KDQ' },
+      { hid: 'description', name: 'description', content: 'Oceanblue Boats builds custom plate aluminium boats for the serious fisherman from Cairns, Australia.' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
