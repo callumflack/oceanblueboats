@@ -46,7 +46,7 @@ export default {
     async handleSubmit (event) {
       this.loading = true
 
-      await fetch('http://formspree.io/hi@oceanblueboats.com.au', {
+      await fetch('https://formspree.io/hi@oceanblueboats.com.au', {
         method: 'post',
         headers: {
           'Accept': 'application/json',
