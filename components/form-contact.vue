@@ -1,9 +1,10 @@
 <template>
-  <form action="https://formspree.io/hi@oceanblueboats.com.au" method="post" @submit.prevent="handleSubmit">
+  <form action="https://formspree.io/vince@oceanblueboats.com.au" method="post" @submit.prevent="handleSubmit">
     <div class="form-group">
       <input placeholder="Your name*" name="name" v-model="name" required>
       <input placeholder="Your email*" type="email" name="email" v-model="email" required>
       <textarea rows="4" placeholder="How can we help make your dream boat?" name="message" v-model="message"/>
+      <input type="hidden" name="_subject" value="New website contact!" />
 
       <div class="u-textRight">
         <transition name="fade">
@@ -46,7 +47,7 @@ export default {
     async handleSubmit (event) {
       this.loading = true
 
-      await fetch('https://formspree.io/hi@oceanblueboats.com.au', {
+      await fetch('https://formspree.io/vince@oceanblueboats.com.au', {
         method: 'post',
         headers: {
           'Accept': 'application/json',
