@@ -1,5 +1,5 @@
 <template>
-  <form action="http://formspree.io/hi@oceanblueboats.com.au" method="post" @submit.prevent="handleSubmit">
+  <form action="https://formspree.io/hi@oceanblueboats.com.au" method="post" @submit.prevent="handleSubmit">
     <div class="form-group">
       <input placeholder="Your name*" name="name" v-model="name" required>
       <input placeholder="Your email*" type="email" name="email" v-model="email" required>
