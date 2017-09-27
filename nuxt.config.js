@@ -8,7 +8,7 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'google-site-verification', content: 'PAZ08G7lraH_fgi9VL18z9BXxutB1DGu20JapK90KDQ' },
+      { name: 'google-site-verification', content: 'RWd0r8c921ulIIaq_foZL7rRPIh2JFshvhs5YKC6gOg' },
       { hid: 'description', name: 'description', content: 'Oceanblue Boats builds custom plate aluminium boats for the serious fisherman from Cairns, Australia.' }
     ],
     link: [
