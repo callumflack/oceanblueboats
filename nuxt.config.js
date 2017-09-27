@@ -4,7 +4,7 @@ module.exports = {
   */
   head: {
     title: 'For far-away places',
-    titleTemplate: '%s | Oceanblue Boats, Cairns',
+    titleTemplate: '%s | OceanBlue Boats, Cairns',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

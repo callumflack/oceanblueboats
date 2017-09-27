@@ -57,7 +57,7 @@ const boats = [
       '/images/obb-boats-455-3.jpg'
     ],
     title: '4.55 metre OB ADV',
-    subtext: 'Great little boat for getting into those tight spaces, whether up the river catching sooty grunter, or around the dams catching barra. If that\'s what you like, then this is the boar for you.'
+    subtext: 'Great little boat for getting into those tight spaces, whether up the river catching sooty grunter, or around the dams catching barra. If that\'s what you like, then this is the boat for you.'
   }, {
     thumbnail: '/images/obb-boats-485-1.jpg',
     images: [
@@ -77,7 +77,7 @@ const boats = [
       '/images/obb-boats-560-4.jpg'
     ],
     title: '5.6 metre OB ADV',
-    subtext: 'After a serious fisherman\'s boat? You can\'t go past this one. This fella\'s for all the features for the adventurer who loves running the coastline to those isolated rivers.',
+    subtext: 'After a serious fisherman\'s boat? You can\'t go past this one. This fella has all the features for the adventurer who loves exploring the coastline and it\'s isolated rivers.',
     button: 'https://www.dropbox.com/s/agal7autgwqju5e/obb-design-560.pdf?dl=0'
   }, {
     thumbnail: '/images/obb-boats-590-1.jpg',
@@ -87,7 +87,7 @@ const boats = [
       '/images/obb-boats-590-3.jpg',
       '/images/obb-boats-590-4.jpg'
     ],
-    title: '5.9 OB ADV',
+    title: '5.9 metre OB ADV',
     subtext: 'After a commercial boat for your surveying, work or passengers? This one\'s for you. From off this frame, we\'ll listen, show you what\'s possible and can customise build to fit your needs.',
     button: 'https://www.dropbox.com/s/ra4qdjz053phc9z/obb-design-590.pdf?dl=0'
   }, {
@@ -98,7 +98,7 @@ const boats = [
       '/images/obb-boats-680-3.jpg',
       '/images/obb-boats-680-4.jpg'
     ],
-    title: '6.8 OB Custom',
+    title: '6.8 metre OB Custom',
     subtext: 'The ultimate boat for offshore fishing adventures with your mates or family. This one has plenty of deck space to move around, and plenty of storage room below. Ideal for chasing Pelagics or bottom fishing.',
     button: 'https://www.dropbox.com/s/nn5b76ywdju3qjb/obb-design-680.pdf?dl=0'
   }

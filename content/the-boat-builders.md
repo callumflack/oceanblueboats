@@ -10,4 +10,4 @@ We believe in building custom made aluminium boats to the highest quality. We fo
 
 > there’s nothing—absolutely nothing—half so much worth doing as messing about in boats.
 
-We've had so much fun with our waterjet cutting machine that also have a sister company, [OceanBlue Living](https://oceanblueliving.com.au/): our own metalworks shop for artistic, functional architectural objects. Check them out if have the time. If nothing else, it shows the versatility, accuracy and flexibility of what we can do for you.
+We've had so much fun with our waterjet cutting machine that we also have a sister company, [OceanBlue Living](https://oceanblueliving.com.au/): our own metalworks shop for artistic, functional architectural objects. Check them out if have the time. If nothing else, it shows the versatility, accuracy and flexibility of what we can do for you.

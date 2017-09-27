@@ -4,7 +4,7 @@ subtitle: Powerful, precision fabrication<br>with waterjet cutting tech.
 heroImage: http://res.cloudinary.com/pw-img-cdn/image/upload/v1505458854/obb-process_wmg0oz.jpg
 ---
 
-We can cut almost any material into virtually shape and size with our waterjet cutter: a tool that cuts with very high-pressure jets of water.
+We can cut almost any material into virtually any shape and size with our waterjet cutter: a tool that cuts with very high-pressure jets of water.
 
 It's powerful, capable of cutting up to 200mm (8”) thick titanium or at least 6” thick stainless steel.
 
