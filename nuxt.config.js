@@ -42,7 +42,8 @@ module.exports = {
     '~/assets/base.css'
   ],
   plugins: [
-    { src: '~/plugins/vue-pure-lightbox', ssr: false }
+    { src: '~/plugins/vue-pure-lightbox', ssr: false },
+    { src: '~plugins/ga.js', ssr: false }
   ],
   modules: [
     'nuxtent'
