@@ -9,7 +9,7 @@
 
     <Container>
       <div class="u-size11of12 u-sm-size3of4 text">
-        <p>We love listening to what our customers want. Please drop by during business hours for a chat. We're open Monday through Friday, from 9am til 3.30pm, at <a href="https://goo.gl/maps/7TPnDqKrtby">The Factory, 116 Lyons Street, Cairns.</a></p>
+        <p>We love listening to what our customers want. Please drop by during business hours for a chat. We're open Monday through Friday, from 8am til 3.30pm, at <a href="https://goo.gl/maps/7TPnDqKrtby">The Factory, 116 Lyons Street, Cairns.</a></p>
 
         <figure>
           <a href="https://goo.gl/maps/7TPnDqKrtby">
