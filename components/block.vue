@@ -49,7 +49,7 @@ export default {
 
 
 <style scoped>
-@import "../assets/vars.css";
+@import '../assets/vars.css';
 
 .Block {
   padding-top: calc(0.75 * var(--block));
