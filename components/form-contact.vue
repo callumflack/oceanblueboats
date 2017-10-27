@@ -19,39 +19,39 @@
 
 <script>
 export default {
-  name: 'form-contact',
+  name: "form-contact",
 
-  data () {
+  data() {
     return {
-      name: '',
-      email: '',
-      message: '',
+      name: "",
+      email: "",
+      message: "",
       formSent: false,
       loading: false
-    }
+    };
   },
 
   computed: {
-    buttonText () {
+    buttonText() {
       if (this.loading) {
-        return 'Loading'
+        return "Loading";
       } else if (this.formSent) {
-        return 'Sent'
+        return "Sent";
       }
 
-      return 'Send ›'
+      return "Send ›";
     }
   },
 
   methods: {
-    async handleSubmit (event) {
-      this.loading = true
+    async handleSubmit(event) {
+      this.loading = true;
 
-      await fetch('https://formspree.io/vince@oceanblueboats.com.au', {
-        method: 'post',
+      await fetch("https://formspree.io/vince@oceanblueboats.com.au", {
+        method: "post",
         headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
+          Accept: "application/json",
+          "Content-Type": "application/json"
         },
 
         body: JSON.stringify({
@@ -59,13 +59,13 @@ export default {
           email: this.email,
           message: this.message
         })
-      })
+      });
 
-      this.loading = false
-      this.formSent = true
+      this.loading = false;
+      this.formSent = true;
     }
   }
-}
+};
 </script>
 
 <style scoped>

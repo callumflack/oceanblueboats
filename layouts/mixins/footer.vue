@@ -50,21 +50,22 @@
 </template>
 
 <script>
-import Block from '~/components/block.vue'
-import Container from '~/components/container.vue'
+import Block from "~/components/block.vue";
+import Container from "~/components/container.vue";
 
 export default {
-  name: 'v-footer',
+  name: "v-footer",
   components: {
     Block,
     Container
   }
-}
+};
 </script>
 
 <style scoped>
 @import "../../assets/vars.css";
 
+/* prettier-ignore */
 .space {
   margin-top: var(--s2);
 

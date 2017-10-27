@@ -29,7 +29,10 @@
           <ul class="small">
             <li><a href="tel:0409 726 128"><span class="contact-marker">t: </span>0409 726 128</a></li>
             <li><a href="mailto:hi@oceanblueboats.com.au"><span class="contact-marker">e: </span>hi@oceanblueboats.com.au</a></li>
-            <li><a href="https://goo.gl/maps/7TPnDqKrtby">116 Lyons Street, Cairns</a></li>
+            <li><a href="https://goo.gl/maps/7TPnDqKrtby">
+              116 Lyons Street, Cairns<br>
+              Queensland 4870 Australia
+            </a></li>
           </ul>
         </div>
 
@@ -40,12 +43,12 @@
 </template>
 
 <script>
-import Navbar from '~/layouts/mixins/navbar.vue'
-import Block from '~/components/block.vue'
-import NavInPageLink from '~/components/nav-in-page-link.vue'
+import Navbar from "~/layouts/mixins/navbar.vue";
+import Block from "~/components/block.vue";
+import NavInPageLink from "~/components/nav-in-page-link.vue";
 
 export default {
-  name: 'v-nav',
+  name: "v-nav",
 
   components: {
     Navbar,
@@ -53,74 +56,74 @@ export default {
     NavInPageLink
   },
 
-  data () {
+  data() {
     return {
       navLinks: [
         {
-          label: 'The home page',
-          link: '/'
+          label: "The home page",
+          link: "/"
         },
         {
-          label: 'The history',
-          link: '/the-history'
+          label: "The history",
+          link: "/the-history"
         },
         {
-          label: 'The factory',
-          link: '/the-factory'
+          label: "The factory",
+          link: "/the-factory"
         },
         {
-          label: 'The process',
-          link: '/the-process'
+          label: "The process",
+          link: "/the-process"
         },
         {
-          label: 'The boat builders',
-          link: '/the-boat-builders'
+          label: "The boat builders",
+          link: "/the-boat-builders"
         },
         {
-          label: 'The designs',
-          link: '/the-designs'
+          label: "The designs",
+          link: "/the-designs"
         },
         {
-          label: 'The location',
-          link: '/contact-us'
+          label: "The location",
+          link: "/contact-us"
         }
       ],
       delayTransition: false
-    }
+    };
   },
 
   computed: {
-    isVisible: function () {
-      return this.$store.state.isMobileNavVisible
+    isVisible: function() {
+      return this.$store.state.isMobileNavVisible;
     },
 
-    currentPage: function () {
-      return this.$store.state.currentPage
+    currentPage: function() {
+      return this.$store.state.currentPage;
     }
   },
 
   methods: {
-    applyDelayTransition (event) {
-      if (event.target.getAttribute('href') === this.$route.path) {
-        return
+    applyDelayTransition(event) {
+      if (event.target.getAttribute("href") === this.$route.path) {
+        return;
       }
 
-      this.delayTransition = true
+      this.delayTransition = true;
 
       setTimeout(() => {
-        this.delayTransition = false
-      }, 1000)
+        this.delayTransition = false;
+      }, 1000);
     },
 
-    close () {
-      this.$store.commit('SET_MODAL_VISIBILITY', false)
+    close() {
+      this.$store.commit("SET_MODAL_VISIBILITY", false);
     }
   }
-}
+};
 </script>
 
 <style scoped>
-@import '../../assets/vars.css';
+@import "../../assets/vars.css";
 
 .arrange-responsively {
   @media (max-width: 1440px) and (max-height: 900px) {

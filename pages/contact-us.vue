@@ -31,14 +31,14 @@
 </template>
 
 <script>
-import Hero from '~/components/hero.vue'
-import Container from '~/components/container.vue'
-import Block from '~/components/block.vue'
-import FormContact from '~/components/form-contact.vue'
-import NavInPage from '~/components/nav-in-page.vue'
+import Hero from "~/components/hero.vue";
+import Container from "~/components/container.vue";
+import Block from "~/components/block.vue";
+import FormContact from "~/components/form-contact.vue";
+import NavInPage from "~/components/nav-in-page.vue";
 
 export default {
-  name: 'contact-us',
+  name: "contact-us",
   components: {
     Hero,
     Container,
@@ -46,13 +46,9 @@ export default {
     FormContact,
     NavInPage
   }
-}
+};
 </script>
 
 <style scoped>
 @import "../assets/vars.css";
-
-
-
-
 </style>
