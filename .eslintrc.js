@@ -1,16 +1,16 @@
+// https://github.com/vuejs/eslint-plugin-vue
 module.exports = {
   root: true,
-  parser: 'babel-eslint',
+  parserOptions: {
+    parser: 'babel-eslint'
+  },
   env: {
     browser: true,
     node: true
   },
-  extends: 'standard',
-  // required to lint *.vue files
-  plugins: [
-    'html'
-  ],
-  // add your custom rules here
-  rules: {},
+  extends: ['eslint:recommended', 'plugin:vue/recommended'],
+  rules: {
+    'no-unused-vars': ['warn']
+  },
   globals: {}
-}
+};
