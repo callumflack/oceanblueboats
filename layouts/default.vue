@@ -2,7 +2,7 @@
   <div :class="currentPage.substring(currentPage.lastIndexOf('/') + 1)">
     <navbar />
     <navbar-floating />
-    <mobile-nav />
+    <v-nav />
 
     <nuxt/>
 
@@ -13,16 +13,15 @@
 <script>
 import Navbar from '~/layouts/mixins/navbar.vue'
 import NavbarFloating from '~/layouts/mixins/navbar-floating.vue'
-import MobileNav from '~/layouts/mixins/mobile-nav.vue'
-
-import VFooter from '~/layouts/mixins/footer.vue'
+import Nav from '~/layouts/mixins/nav.vue'
+import Footer from '~/layouts/mixins/footer.vue'
 
 export default {
   components: {
     Navbar,
     NavbarFloating,
-    MobileNav,
-    VFooter
+    'v-nav': Nav,
+    'v-footer': Footer
   },
 
   computed: {
@@ -34,10 +33,12 @@ export default {
 </script>
 
 <style scoped>
-.page-enter-active, .page-leave-active {
+.page-enter-active,
+.page-leave-active {
   transition: opacity 0.4s;
 }
-.page-enter, .page-leave-to {
+.page-enter,
+.page-leave-to {
   opacity: 0;
 }
 </style>

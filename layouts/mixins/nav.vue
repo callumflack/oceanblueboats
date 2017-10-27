@@ -1,7 +1,7 @@
 <template>
   <div
     @click="close"
-    :class="['mobile-nav',
+    :class="['nav',
       {
         hidden: !isVisible,
         'delay-transition': delayTransition
@@ -10,8 +10,8 @@
   >
     <navbar />
 
-    <Block nav textColumn>
-      <nav >
+    <Block nav>
+      <nav>
         <ul>
           <nav-in-page-link
             class="header"
@@ -26,7 +26,7 @@
 
         <div class="second-nav">
           <hr>
-          <ul>
+          <ul class="small">
             <li><a href="tel:0409 726 128"><span class="contact-marker">t: </span>0409 726 128</a></li>
             <li><a href="mailto:hi@oceanblueboats.com.au"><span class="contact-marker">e: </span>hi@oceanblueboats.com.au</a></li>
             <li><a href="https://goo.gl/maps/7TPnDqKrtby">116 Lyons Street, Cairns</a></li>
@@ -45,7 +45,7 @@ import Block from '~/components/block.vue'
 import NavInPageLink from '~/components/nav-in-page-link.vue'
 
 export default {
-  name: 'mobile-nav',
+  name: 'v-nav',
 
   components: {
     Navbar,
@@ -59,22 +59,28 @@ export default {
         {
           label: 'The home page',
           link: '/'
-        }, {
+        },
+        {
           label: 'The history',
           link: '/the-history'
-        }, {
+        },
+        {
           label: 'The factory',
           link: '/the-factory'
-        }, {
+        },
+        {
           label: 'The process',
           link: '/the-process'
-        }, {
+        },
+        {
           label: 'The boat builders',
           link: '/the-boat-builders'
-        }, {
+        },
+        {
           label: 'The designs',
           link: '/the-designs'
-        }, {
+        },
+        {
           label: 'The location',
           link: '/contact-us'
         }
@@ -114,7 +120,13 @@ export default {
 </script>
 
 <style scoped>
-@import "../../assets/vars.css";
+@import '../../assets/vars.css';
+
+.arrange-responsively {
+  @media (max-width: 1440px) and (max-height: 900px) {
+    display: flex;
+  }
+}
 
 .second-nav {
   display: inline-block;
@@ -127,9 +139,13 @@ export default {
   @media (--lg-viewport) {
     margin-top: var(--s4);
   }
+
+  @media (min-width: 512px) and (max-width: 1440px) and (max-height: 900px) {
+    display: none;
+  }
 }
 
-.mobile-nav {
+.nav {
   background-color: #fff;
   bottom: 0;
   left: 0;
@@ -138,23 +154,19 @@ export default {
   right: 0;
   top: 0;
   transform: translateY(0);
-  transition:
-    opacity var(--transition-duration),
-    transform 0s 0s;
+  transition: opacity var(--transition-duration), transform 0s 0s;
   z-index: 15;
 }
 
-.mobile-nav.hidden {
+.nav.hidden {
   opacity: 0;
   transform: translateY(100vh);
-  transition:
-    opacity var(--transition-duration),
+  transition: opacity var(--transition-duration),
     transform 0s var(--transition-duration);
 }
 
-.mobile-nav.delay-transition {
-  transition:
-    opacity var(--transition-duration) var(--transition-delayed),
+.nav.delay-transition {
+  transition: opacity var(--transition-duration) var(--transition-delayed),
     transform 0s var(--transition-delayed);
 }
 </style>
