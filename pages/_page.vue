@@ -22,9 +22,9 @@
 </template>
 
 <script>
-import Hero from '~/components/hero.vue'
-import Block from '~/components/block.vue'
-import NavInPage from '~/components/nav-in-page.vue'
+import Hero from "~/components/hero.vue";
+import Block from "~/components/block.vue";
+import NavInPage from "~/components/nav-in-page.vue";
 
 export default {
   components: {
@@ -33,25 +33,21 @@ export default {
     NavInPage
   },
 
-  head () {
+  head() {
     return {
       title: this.page.title,
-      meta: [
-        { hid: 'description', name: 'description', content: this.page.subtitle }
-      ]
-    }
+      meta: [{ hid: "description", name: "description", content: this.page.subtitle }]
+    };
   },
 
-  async asyncData ({ app, route, payload }) {
+  async asyncData({ app, route, payload }) {
     return {
-      page: await app.$content('/').get(route.path)
-    }
+      page: await app.$content("/").get(route.path)
+    };
   }
-}
+};
 </script>
 
 <style scoped>
 @import "../assets/vars.css";
-
-
 </style>
